@@ -1,0 +1,52 @@
+.cpt-site-alert {
+  align-items: center;
+  background-color: $green300;
+  color: $white;
+  display: flex;
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: .2s ease all;
+
+  &.no-dissmiss {
+    .close-alert {
+      display: none;
+    }
+  }
+
+  p,
+  span,
+  a {
+    color: $white;
+    font-weight: 500;
+    margin: 0;
+
+    @media screen and (max-width: $xs-tablet) {
+      font-size: 1rem;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+ 
+  .general-frame {
+    padding: .7rem 3rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: $xs-tablet) {
+      padding: .5rem 3rem;
+    }
+
+    @media screen and (max-width: 230px) { 
+      padding: .5rem 0;
+    }
+
+    &.centered {
+      text-align: center;
+    }
+  }
+}

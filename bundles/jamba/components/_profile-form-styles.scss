@@ -1,0 +1,655 @@
+.jamba-update-profile {
+	width: 100%;
+	max-width: 46.4rem;
+	margin: 0 auto; 
+
+	@media screen and (max-width: $xs-tablet) {
+		max-width: none;
+		padding: 0 1.5rem; 
+	}
+
+	h1 {
+		font-weight: 500;
+		font-size: 5rem;
+		color: $black;
+		letter-spacing: 0.1rem; 
+		margin: 4rem 0 2rem;
+		text-align: center;
+	}
+
+	input::-webkit-input-placeholder { /* Chrome/Opera/Safari/ */
+		color: $green50;
+		opacity: 1;
+	}
+
+	input:-moz-placeholder { /* Firefox 18- */
+		color: $green50;  
+		opacity: 1;
+	}
+
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: $green50;  
+		opacity: 1;
+	}
+
+	input:-ms-input-placeholder {  /* IE */
+		color: $green50;  
+		opacity: 1;
+	}
+
+	select {
+		-webkit-appearance: none; 
+		-moz-appearance: none;
+		appearance: none;
+		background-image: url("../img/select-triangle.png");
+		background-position: center right;
+		background-size: 0.7rem 0.5rem;
+		background-repeat: no-repeat;
+	}
+
+	.input-wrapper input,
+	.input-wrapper .birthday-wrapper .day,
+	.input-wrapper .birthday-wrapper .month,
+	.input-wrapper .birthday-wrapper .year,
+	.input-wrapper .gender,
+	.input-wrapper .favorite-product,
+	.location-search-wrapper input,
+	.input-wrapper .leaving-reason {
+		width: 100%;
+		margin-bottom: 1.2rem; 
+		border: none;
+		padding-bottom: 0.4rem;
+		border-bottom: 0.2rem solid $green300;
+	}
+
+	.input-wrapper .leaving-reason {
+		margin-top: 2.6rem
+	}
+
+	.input-wrapper .favorite-product {
+		margin-bottom: 0;
+	}
+
+	.input-wrapper input[type="text"],
+	.input-wrapper input[type="email"],
+	.location-search-wrapper input[type="text"],
+	.input-wrapper input[type="text"]::placeholder,
+	.input-wrapper input[type="email"]::placeholder,
+	.location-search-wrapper input[type="text"]::placeholder,
+	.input-wrapper .birthday-wrapper .day,
+	.input-wrapper .birthday-wrapper .month,
+	.input-wrapper .birthday-wrapper .year,
+	.input-wrapper label,
+	.input-wrapper select,
+	.location-wrapper span,
+	.unsubscribe-title span {
+		font-size: 1.4rem;
+		color: $green50;
+		font-weight: 500;
+		font-family: "Filson Soft W03";
+	}
+
+	.input-wrapper {
+		position: relative;
+		& > label {
+			margin-top: 1.4rem;
+			margin-bottom: 0; 
+
+			&:empty {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.birthday-wrapper {
+		display: flex;
+		margin-bottom: 1rem;
+	}
+
+	.birthday-wrapper .selectric-day,
+	.birthday-wrapper .selectric-year {
+		width: 20%;
+	}
+
+	.birthday-wrapper .selectric-month {
+		width: 60%;
+		margin: 0 1.6rem;
+	}
+
+	.location-wrapper,
+	.location-search-wrapper,
+	.unsubscribe-title {
+		text-align: center;
+	}
+
+	.location-wrapper {
+		margin-top: 3rem;
+	}
+
+	.unsubscribe-title {
+		margin-bottom: 3rem;
+	}
+
+	.location-wrapper button,
+	.unsubscribe-title button {
+		background-color: $green700;
+		border: 1px solid transparent;
+		width: 100%;
+		max-width: 32.2rem;
+		margin: 0 auto;
+		border-radius: 2.6rem;
+		padding: 1.2rem 0;
+		margin-top: 2rem;
+		cursor: pointer;
+	}
+
+	.location-wrapper span,
+	.unsubscribe-title span {
+		font-size: 1.4rem;
+	}
+
+	.location-wrapper button span,
+	.unsubscribe-title button span {
+		font-size: 1.6rem;
+		font-family: Filson Soft W03;
+		font-weight: 700;
+	}
+
+	.location-wrapper button img,
+	.unsubscribe-title button img {
+		max-width: 1.6rem;
+		vertical-align: middle;
+		margin-left: 0.4rem;
+	}
+
+	.separator-wrapper {
+		max-width: 34.6rem;
+		margin: 2rem auto;
+		background-image: url("../img/separator.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 200% 40%;
+	}
+
+	.separator-wrapper span {
+		display: block;
+		width: 5rem;
+		background-color: $white;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.6rem;
+	}
+
+	.location-search-wrapper button {
+		background-color: $green300;
+		border: 1px solid transparent;
+		width: 100%;
+		max-width: 32.2rem;
+		margin: 0 auto;
+		border-radius: 2.6rem;
+		padding: 1.2rem 0;
+		cursor: pointer;
+	}
+
+	.location-search-wrapper button span {
+		font-size: 1.6rem;
+		color: $white;
+		font-family: Filson Soft W03;
+		font-weight: 700;
+	}
+
+	.location-search-wrapper button img {
+		max-width: 1.6rem;
+		vertical-align: middle;
+		margin-left: 0.4rem;
+	}
+
+	.location-search-wrapper input {
+		max-width: 32.2rem;
+	}
+
+	.location-search-wrapper {
+		position: relative;
+	}
+
+	.store-locator-results-item {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.store-locator .store-locator-results-item:after {
+		content: "";
+		width: 100%;
+		height: 0.6rem;
+		display: block;
+		background-image: url("../img/separator.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.store-locator .loc-res-title {
+		margin-top: 1.6rem;
+	}
+
+	.store-locator .loc-res-title span {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: $green50;
+	}
+
+	.store-locator .loc-res-address span {
+		font-size: 1.4rem;
+		color: $green50;
+	}
+
+	.checkbox-container {
+		width: 7rem;
+		height: 6.8rem;
+		text-align: center;
+	}
+
+	.checkbox-container {
+		display: block;
+		position: relative;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.checkbox-container input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		width: 46.4rem;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+	}
+
+	.checkmark {
+		position: absolute;
+		height: 1.8rem;
+		width: 1.8rem;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.checkmark:before {
+		content: "";
+		height: 1.8rem;
+		width: 1.8rem;
+		border: 2px solid #acacac;
+		position: absolute;
+		display: block;
+		border-radius: 0.3rem;
+		z-index: 1;
+		transition: .2s ease opacity;
+	}
+	.checkmark:after {
+		content: "";
+		background: url('../img/checkmark-icon.svg') center center no-repeat;
+		background-size: 1.2rem auto;
+		height: 1.8rem;
+		width: 1.8rem;
+		border: 2px solid #7639af;
+		position: absolute;
+		display: none;
+		animation: .4s linear bounceIn forwards;
+		border-radius: 0.3rem;
+		z-index: 2;
+	}
+
+	.checkbox-container input:checked ~ .checkmark:before {
+		opacity: 0;
+	}
+
+	.checkbox-container input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.submit-wrapper {
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	.submit-wrapper button {
+		background: $green300;
+		border: 1px solid transparent;
+		border-radius: 2rem;
+		width: 100%;
+		max-width: 9.6rem;
+		padding: 0.6rem;
+		cursor: pointer;
+	}
+
+	.submit-wrapper button span {
+		font-size: 1.4rem;
+		color: $white;
+		font-family: Filson Soft W03;
+		font-weight: 500;
+	}
+
+	.favorite-locations-list {
+		margin-top: 1.4rem;
+	}
+
+	.favorite-locations-item .loc-res-address {
+		max-width: 12rem;
+	}
+
+	.unsubscribe-item .description {
+	max-width: 38rem;
+	}
+
+	.favorite-locations-item .loc-res-title span,
+	.unsubscribe-item .title span {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: $green300;
+	}
+
+	.favorite-locations-item .loc-res-address span,
+	.unsubscribe-item .description span {
+		font-size: 1.2rem;
+		color: $green50;
+	}
+
+	.favorite-locations-item,
+	.unsubscribe-item {
+		display: flex;
+		border-bottom: 0.2rem solid #dedede;
+	}
+
+	.favorite-locations-item:first-of-type,
+	.unsubscribe-item:first-of-type {
+		border-top: 0.2rem solid #dedede;
+	}
+
+	.favorite-locations-item .details-container {
+		width: 70%;
+	}
+
+	.favorite-locations-item .loc-res-title,
+	.unsubscribe-item .title {
+		margin-top: 0.8rem;
+	}
+
+	.favorite-locations-list .checkbox-container input {
+		width: 39rem;
+	}
+
+	.remove-container {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.remove-container button {
+		width: 7rem;
+		height: 100%;
+		background-color: $white;
+		border: 1px solid transparent;
+		cursor: pointer;
+	}
+
+	.remove-container button span {
+		display: block;
+		background-image: url("../img/remove-icon.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.remove-container button span {
+		display: block;
+		background-image: url("../img/remove-icon.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 1.6rem;
+		height: 1.5rem;
+		margin: 0 auto;
+	}
+
+	.add-more {
+		text-align: center;
+		margin-top: 1.4rem;
+	}
+
+	.add-more button {
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+
+	.add-more button span {
+		color: $green300;
+		font-weight: 500;
+		font-size: 1.2rem;
+		font-family: "Filson Soft W03";
+	}
+
+	.add-more button span::after {
+		content: "";
+		width: 1.4rem;
+		height: 1.4rem;
+		display: inline-block;
+		background-image: url("../img/times-circle-regular.svg");
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		vertical-align: middle;
+		margin-left: 0.4rem;
+		transform: rotate(45deg);
+	}
+
+	.disabled label {
+		color: #9a9a9a !important;
+	}
+
+	input:disabled,
+	select:disabled {
+		color: #9a9a9a !important;
+		border-bottom-color: #9a9a9a !important;
+		background-color: transparent;
+	}
+
+	select:disabled {
+		background-image: url("../img/select-triangle-disabled.png");
+	}
+
+	.location-search-wrapper button {
+		margin-bottom: 2rem;
+	}
+
+	.unsubscribe-form .submit-wrapper button {
+		max-width: 34rem;
+	}
+
+	.unsubscribe-from-all {
+		text-align: center;
+	}
+
+	.unsubscribe-form .submit-wrapper {
+		margin-top: 5.8rem;
+	}
+
+	.unsubscribe-form .submit-wrapper button {
+		padding: 1.2rem;
+	}
+
+	.unsubscribe-from-all a {
+		color: $green300;
+		border-bottom: 1px dashed $green300;
+		font-size: 1rem;
+		text-decoration: none;
+		font-family: Filson Soft W03;
+	}
+
+	.gender-wrapper {
+		margin-top: 1.4rem;
+		label:empty {
+			display: none; 
+		}
+	}
+
+	.selectric-items > *,
+	.selectric > * {
+		font-family: Filson Soft W03;
+		font-size: 1.4rem;
+		color: #4c4d4c;
+		font-weight: 500;
+	}
+
+	.selectric {
+		border-bottom: 0.2rem solid $green300 !important;
+		cursor: pointer;
+		margin: 0;
+		background: transparent;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	.selectric-items {
+		border-top: 0;
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-radius: 0 0 1rem 1rem;
+		box-shadow: 0 .4rem 1rem #a1a1a1; 
+		height: auto !important;
+	}
+
+	.selectric-items li {
+		border-bottom: 2px solid #e3e8f9;
+		margin-bottom: 0;
+		padding: 1.5rem 1.2rem;
+		background: $white;
+	}
+
+	.selectric-items li:last-of-type {
+		border-bottom: none;
+	}
+
+	.selectric-items li:last-child {
+		margin-bottom: 0;
+	}
+
+	.selectric-items li:hover {
+		background-color: $green300;
+		color: $white;
+		cursor: pointer;
+	}
+
+	.selectric-items li.highlighted {
+		background-color: $gold500;
+		color: $black;
+	}
+
+	.selectric-items li.last {
+		border-radius: 0 0 1rem 1rem;
+	}
+
+	.selectric .button {
+		background: transparent;
+		bottom: 0;
+		top: auto;
+	}
+
+	.selectric .label {
+		margin: 0;
+		font-size: 1.4rem;
+	}
+
+	.selectric .button::after {
+		border-top-color: $gray700 !important;
+		margin-right: 0.2rem;
+	}
+
+	.selectric-open .button::after {
+		transform: rotate(180deg);
+	}
+
+	input[type="submit"] {
+		background: $green300;
+		color: $white;
+		border-radius: 500px;
+		padding: 1.2rem 3.4rem;
+		font-size: 1.6rem;
+		display: inline-block;
+		text-shadow: none !important;
+		min-width: 190px;
+		text-align: center;
+		position: relative;
+		font-family: $primaryType;
+		border: 0;
+		font-weight: 700;
+	
+		&:hover {
+			color: $white;
+			text-decoration: none;
+		}
+	
+		&:after {
+			content: "";
+		}
+	
+		&:hover {
+			color: $black;
+			background: $gold500;
+			outline: none;
+		}
+
+		&:focus {
+			color: $black;
+			background: $gold500;
+			outline: none;
+			box-shadow: inset 0 0 0 3px $white 0 0 0 3px $green300;
+		}
+	}
+
+	.input-validation-error {
+		border-bottom: .2rem solid $red600 !important;
+		background-image: url('../img/icons/input-invalid.svg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+	}
+
+	.field-validation-error {
+		color: $red600;
+    position: absolute;
+    font-weight: 500;
+		font-family: $primaryType;
+		bottom: -0.6rem;
+		left: 0;
+	}
+
+
+	@keyframes bounceIn {
+		0% {
+			opacity: 0;
+			transform: scale(0.3) translate3d(0,0,0);
+		}
+		50% {
+			opacity: 0.9;
+			transform: scale(1.2);
+		}
+		80% {
+			opacity: 1;
+			transform: scale(0.89);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1) translate3d(0,0,0);
+		}
+	}
+}

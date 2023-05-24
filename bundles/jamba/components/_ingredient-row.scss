@@ -1,0 +1,67 @@
+.ingredient-row {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 2.5rem auto 3.5rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    @media(max-width: $xs-tablet){
+        justify-content: flex-start;
+    }
+
+    .ingredient-wrap {
+        display: inline-block;
+    }
+
+  .category {
+    background-image: none;
+    background-repeat: no-repeat;
+    display: block;
+    min-width: 168px;
+    height: 180px;
+    text-align: center;
+    vertical-align: bottom;
+    background-position-x: -14px;
+
+    @media(max-width: $small-tablet){
+      margin-right: 0;
+    }
+  }
+
+  .text-descriptor { 
+    display: block;
+    width: 110px;
+    margin: 0 auto;
+     font-family: $primaryType;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $black;
+    letter-spacing: 0.2px;
+    
+    &::after {
+      content: none !important;
+    }
+  }
+}
+
+.mobile-gradient {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+67,ffffff+100&0+67,1+100 */
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 67%, rgba(246,249,249,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 67%,rgba(246,249,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0) 67%,rgba(246,249,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}  

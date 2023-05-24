@@ -1,0 +1,24 @@
+.category-list-component {
+  .row {
+    justify-content: center;
+    max-width: 115.4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .col {
+      flex-basis: 50%;
+      width: 100%;
+      max-width: 56.5rem;
+
+      &:first-child {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      &.expanded {
+        max-width: 100% !important; 
+        flex-basis: 100%;
+      }
+    }
+  }
+}

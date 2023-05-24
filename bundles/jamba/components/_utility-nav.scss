@@ -1,0 +1,276 @@
+.utility-nav-component {
+  text-align: right;
+  height: 3rem;
+  margin-bottom: 0;
+
+  @media screen and (max-width: $xs-tablet) {
+    text-align: center;
+    padding-top: 0;
+    height: auto;
+    padding-left: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-basis: 33.3%;
+    flex-grow: 1;
+  }
+
+  .icon-mail {
+    font-size: 1.2rem;
+  }
+
+  .icon-giftcard {
+    font-size: 1.6rem;
+  }
+
+  .icon-reward {
+    font-size: 1.6rem;
+  }
+
+  ul {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    height: inherit;
+    
+    @media screen and (max-width: $xs-tablet) {
+      padding-left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 230px) { 
+      flex-direction: column;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+      vertical-align: middle;
+      height: inherit;
+
+
+      @media screen and (max-width: $xs-tablet) {
+       margin-right: 1rem;
+      }
+
+      @media screen and (max-width: 230px) { 
+        margin-right: 0;
+      }
+
+      & > a {
+        font-size: 1.5rem;
+        color: $gray500;
+        text-decoration: none;
+        text-shadow: none !important;
+        height: inherit;
+
+
+        &:hover,
+        &:focus,
+        &.fcs-nav-active {
+          color: $green100;
+          font-family: $primaryType;
+          font-weight: 500;
+          outline-offset: 5px;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .log-in {
+    display: inline-block;
+    line-height: 2.4rem;
+    position: relative;
+
+    @media screen and (max-width: $xs-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 3.9rem;
+    }
+
+    img,
+    svg{
+      width: 2.4rem;
+      height: auto;
+      margin-right: .6rem;
+      
+      @media screen and (max-width: $xs-tablet) {
+        width: 2.4rem !important;
+        height: auto !important;
+        margin: 0;
+      }
+    }
+
+    span {
+      @media screen and (max-width: $xs-tablet) {
+        font-size: .9rem;
+      }
+    }
+  }
+
+  .greeting-desktop {
+    @media screen and (max-width: $xs-tablet) {
+      display: none;
+    }
+  }
+
+  .greeting-mobile {
+    display: none;
+
+    @media screen and (max-width: $xs-tablet) {
+      display: block;
+    }
+  }
+
+  .start-order-btn {
+    padding-top: 0.4rem;
+    display: none;
+
+    @media screen and (max-width: $xs-tablet) {
+      display: flex;
+      width: 8rem;
+      height: 7.5rem;
+      text-align: center;
+      padding: 0rem;
+      white-space: normal;
+      margin: -1.35rem -1.7rem -1.35rem 0;
+      background: $gold500;
+    }
+
+    @media screen and (max-width: 230px) { 
+      width: 4.5rem;
+      height: 4.5rem;
+    }  
+
+    .btn-text {
+      @media screen and (max-width: $xs-tablet) {
+        align-self: center;
+        font-weight: 700;
+        line-height: 0.89;
+      }
+    }
+  }
+
+  .basket {
+    display: block;
+    position: relative;
+    @media screen and (max-width: $xs-tablet) {
+      display: none;
+    }
+   
+    &.mobile-display {
+      @media screen and (max-width: $xs-tablet) {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: $xs-tablet) {
+      margin-left: 2rem;
+    }
+
+    img,
+    svg {
+      width: 3.2rem;
+      height: auto;
+      vertical-align: inherit;
+      
+      @media screen and (max-width: $xs-tablet) {
+        width: 3.8rem !important;
+        height: auto !important;
+      }
+    }
+  }
+
+  .basket-notification {
+    background: $green300;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+    color: $white;
+    font-size: .8rem;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.2rem;  
+
+    @media screen and (max-width: $xs-tablet) {
+      top: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  .profile-notification {
+    background: $mandarin500;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+    color: $black;
+    font-size: .9rem;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    left: -1.2rem;
+    top: -0.3rem;
+
+    @media screen and (max-width: $xs-tablet) {
+      left: -0.5rem;
+      top: 0;
+    }
+  }
+
+  .basket,
+  .log-in {
+    &:hover,
+    &:focus,
+    &:active {
+      svg path {
+        fill: $black;
+      }
+    }
+  }
+
+  .basket {
+    &:hover,
+    &:focus,
+    &:active {
+      svg {
+        #Path {
+          fill: #D9E6B3;
+        }
+      }
+    }
+  }
+}
+
+.highcontrast {
+  .utility-nav-component {
+    .basket,
+    .log-in {
+      &:hover,
+      &:focus,
+      &:active {
+        svg path {
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}

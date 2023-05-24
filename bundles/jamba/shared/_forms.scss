@@ -1,0 +1,42 @@
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  border-radius: 0;
+  filter: none;
+}
+
+.custom-list {
+  padding: 0;
+
+  li {
+    font-size: 1.7rem;
+    line-height: 1.29;
+    color: $black;
+    font-weight: 500;
+    font-family: $primaryType;
+    list-style: none;
+
+    &:before {
+      content: "•";
+      padding-right: .4rem;
+      color: $green300;
+    }
+  }
+}
+
+.ui-datepicker {
+  .ui-state-active {
+    background: $green300;
+    border: 1px solid $green300;
+    font-weight: 700;
+  }
+}
+
+.form-note {
+  color: $black;
+  font-family: $primaryType;
+  font-size: 1.2rem;
+  line-height: 1.67;
+  text-align: right;
+}

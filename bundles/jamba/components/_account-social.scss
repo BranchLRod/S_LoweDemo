@@ -1,0 +1,50 @@
+.account-social-component {
+  font-family: $primaryType;
+  max-width: 32rem;
+  margin: 0 auto;
+
+  .network-details-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+
+  .account-details-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    max-width: 2.8rem;
+    height: 2.8rem;
+    width: 100%;
+    margin-right: 1rem;    
+  }
+
+  .title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    margin: .4rem 0;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .primary-button {
+    display: block;
+    margin-bottom: 4.5rem;
+
+    @media screen and (max-width: $xs-tablet) {
+      margin-bottom: 2rem;
+    }
+
+    +.account-link {
+      @media screen and (min-width: $small-tablet) {
+        display: block;
+      }
+    }
+  }
+}

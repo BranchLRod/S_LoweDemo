@@ -1,0 +1,77 @@
+.header {
+  background: $white;
+  box-shadow: 0 .2rem .5rem 0 rgba($blue500, 0.6);
+  height: 12.5rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: $primaryType;
+  z-index: 10;
+  transition: none;
+  width: 100%;
+
+  &.locked {
+    position: fixed;
+    height: 9.1rem;
+
+    @media screen and (max-width: $sml-desktop) {
+      height: auto;
+    }
+
+    .site-logo-component {
+      img {
+        max-width: 12rem;
+      }
+    }
+
+    &.mobile-menu-open {
+      z-index: 500;
+      position: fixed;
+      top: 0;
+    }
+  }
+
+ 
+
+  @media screen and (max-width: $xs-tablet) {
+    border-top: 0;
+    height: 7.5rem;
+    min-height: 0;
+  }
+
+  &.scrolled {
+    height: 11rem;
+    min-height: 0;
+
+    @media (max-width: $xs-tablet) {
+      height: 8.7rem;
+    }
+  }
+  .site-logo-component {
+    img {
+      display: inline-block;
+      max-width: 15rem;
+      transition: .2s ease all;
+      .ie &,
+      .edge & { 
+        transition: none;
+      }
+    }
+  }
+}
+
+.sc-editor .header {
+    position: relative;
+}
+
+.ie {
+  body {
+    &.modal-open {
+      .header {
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}

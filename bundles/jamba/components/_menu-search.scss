@@ -1,0 +1,223 @@
+.menu-search-component {
+  display: none;
+  width: 100%;
+  width: 37.5rem;
+  min-height: 21.5rem;
+  padding: 2rem;
+  background-color: $green1000;
+  position: fixed;
+  z-index: 10;
+  top: 11rem;
+  margin-top: -1.5rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 99.085% 99.665%, 98.401% 99.447%, 97.560% 99.204%, 96.0136% 98.8140%, 95.3682% 98.6681%, 94.5165% 98.490%, 93.3488% 98.2685%, 91.9621% 98.0371%, 90.4248% 97.8169%, 89.1578% 97.6611%, 87.1997% 97.4632%, 85.2882% 97.3152%, 83.4533% 97.2123%, 81.6933% 97.1471%, 80.7% 97.1243%, 79.2% 97.1074%, 78.5269% 97.1074%, 77.4029% 97.1115%, 75.7917% 97.129%, 74.6672% 97.1508%, 73.6181% 97.1756%, 72.4944% 97.2078%, 70.9592% 97.260%, 70.0546% 97.2950%, 68.4442% 97.3644%, 66.8741% 97.4396%, 65.9037% 97.489%, 65.1154% 97.5305%, 63.4634% 97.6239%, 61.70533% 97.7297%, 60.5021% 97.8053%, 58.8125% 97.9157%, 57.5509% 98.000%, 56.08933% 98.1012%, 55.0338% 98.1747%, 54.0583% 98.2442%, 52.8263% 98.33%, 51.58% 98.421%, 50.613% 98.492%, 49.1893% 98.595%, 48.105% 98.674%, 46.6402% 98.780%, 45.256% 98.879%, 44.1634% 98.957%, 42.780% 99.0549%, 41.022% 99.176%, 40.050% 99.241%, 38.811% 99.323%, 37.648% 99.398%, 36.299% 99.480%, 34.7258% 99.5735%, 33.266% 99.654%, 31.916% 99.723%, 30.7519% 99.779%, 29.554% 99.832%, 28.317% 99.882%, 26.744% 99.936%, 25.2837% 99.978%, 24.2666% 100%, 22.999% 100.022%, 21.688% 100.0396%, 20.9024% 100.0475%, 19.9282% 100.0545%, 18.504% 100.0590%, 17.680% 100.0590%, 16.519% 100.0557%, 15.2082% 100.0471%, 14.0098% 100.0347%, 12.8112% 100.0181%, 11.64826% 100%, 10.2226% 99.971%, 8.7616% 99.9355%, 7.4887% 99.899%, 5.9914% 99.851%, 4.6048% 99.8016%, 3.291% 99.7487%, 1.943% 99.6888%, 0.932% 99.638%, 0% 99.586%, 0% 0%);
+
+  &.header-locked {
+    margin-top: 0;
+  }
+  
+  @media screen and (max-width: $xs-tablet) {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: $sml-desktop) {
+    width: 100%;
+  }
+
+  @media (max-width: $xs-small-tablet) and (orientation:landscape) {
+    overflow: auto;
+    height: calc(100vh - 14rem);
+    min-height: 0;
+  }
+  
+  @media (max-width: $sml-desktop) and (orientation:landscape) {
+    overflow: auto;
+    height: calc(100vh - 16rem);
+    min-height: 0;
+  }
+
+  &.open {
+    display: block;
+    animation: fadeInFoodSeach .2s ease-in;
+  }
+  
+  .close {
+    margin: 2.3rem 2.3rem 1.1rem auto;
+    display: block;
+    width: 2.3rem;
+    height: 2.3rem;
+    border: none;
+  }
+
+  .menu-search-body {
+    margin-top: 7rem;
+    form {
+      position: relative;
+    }
+    input[type="text"] {
+      font-size: 1.6rem;
+      padding-bottom: 1rem;
+      padding-right: 3.2rem;
+    }
+    button {
+      border: none;
+      background: transparent;
+      position: absolute;
+      right: 0;
+      top: 0;
+	 }
+    span {
+      display: block;
+      width: 100%;
+      font-size: 1.5rem;
+      padding-bottom: .4rem;
+      font-family: $primaryType;
+      text-align: center;
+      &.auto-menu {
+        position: relative;
+        text-align: left;
+        min-height: 3rem;
+        font-size: 1.5rem;
+        &:after {
+          content: '';
+          background-image: url("../img/divider-green.svg");
+          overflow: hidden;
+          background-size: cover;
+          height: 2.8px;
+          width: 100%;
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        a {
+          display: block;
+          line-height: 1;
+          padding: 1rem 0 1rem 0;
+        }
+      }
+    }
+    
+    div[data-ref="results"] {
+      span[data-ref="no-results"] {
+        word-break: break-word;
+      }
+    }
+  }
+
+.menu-search-footer {
+	text-align: center;
+	& .triangle-link {
+      font-size: 1.8rem;
+      color: $green300;
+      font-weight: 500;
+
+      &:after {
+        background-image: url("../img/triangle-green.svg");
+      }
+    }
+    @media (max-width: $xs-small-tablet) {
+    	padding-bottom: 3rem;
+    }
+    .see-all-results {
+      display: block;
+      margin-top: 1rem;
+    }
+}
+    .menu-search-filters {
+      font-family: $primaryType;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: lowercase;
+      border: none;
+      width: 100%;
+      order: 5;
+      display: none;
+
+      .filter-title {
+        display: inline-block;
+        margin-bottom: 2rem;
+        
+        @media(max-width: $xs-tablet){
+          display: block;
+        }
+      }
+    fieldset {
+    	text-align: left;
+    }
+      .menu-search-filters-list {
+        margin: 0;
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        font-weight: normal;
+        padding-left: 2rem;
+        overflow-x: scroll;
+
+        @media(max-width: $xs-tablet){
+          padding-left: 0;
+          white-space: nowrap;
+          width: calc(100vw - 6rem);
+          height: 60px;
+        }
+
+        li {
+          display: inline-block;
+          margin-right: 1.2rem;
+          white-space: nowrap;
+
+          @media(max-width: $xs-tablet){
+            padding-left: 0;
+          }
+          input[type=checkbox] {
+          	opacity: 0;
+          }
+          input[type=checkbox]:checked + label {
+          	background-color: $green700;
+          }
+          label {
+            display: inline-block;
+            position: relative;
+            font-size: 1.5rem;
+              &:before {
+                content: "";
+                display: inline-block;
+                cursor: pointer;
+                height: 2.5rem;
+                width: 2.5rem;
+                border: 0.2rem solid $green300;
+                background: $white;
+                border-radius: .4rem;
+                margin-right: 1rem;
+                -ms-transform: translateY(30%);
+                transform: translateY(30%);
+              }
+          }
+        }
+      }
+    }
+}
+
+[data-component="menu-search-component"] {
+  .item-slider {
+    .text-descriptor {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@keyframes fadeInFoodSeach {
+  0%   { 
+    opacity: 0; 
+    
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
+.highcontrast {
+  .menu-search-component {
+    border: 1px solid $white;
+    clip-path: none;
+  }
+}

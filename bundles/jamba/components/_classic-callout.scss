@@ -1,0 +1,232 @@
+.classic-callout-component  {
+  padding: 5rem 0;
+
+  @media (max-width: $xs-tablet) {
+    padding-bottom: 2rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /*new stuff*/
+  .faq-component .column {
+    margin: 0 auto;
+  }
+
+  .script-text {
+    color: $green300;
+    font-size: 2.2rem;
+    margin-right: 0.23em;
+
+    @media(max-width: $xs-tablet) {
+      display: block;
+      width: 100%;
+      font-size: 2.2rem;
+    }
+  }
+
+  .column {
+    margin: 0 auto;
+  }
+
+  .callout-heading {
+    font-family: $primaryType;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.07;
+    color: $black;
+
+    @media(max-width: $xs-tablet){
+      display: block;
+      margin: 0;
+    }
+  }
+  /*end new stuff*/
+
+  &.no-padding {
+      padding: 0rem !important;
+  }
+
+  .callout-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    font-size: 1.5rem;
+
+    @media(max-width: $xs-tablet){
+      flex-direction: column;
+      padding: 0;
+
+      .firefox & {
+        display: block;
+      }
+    }
+      .callout-image {
+        width: 100%;
+        max-width: 327px;
+        flex-shrink: 0;
+        align-items: stretch;
+        overflow: hidden;
+        z-index: 8;
+        border-radius: 0.8rem 0.8rem 0 0;
+        clip-path: polygon(0.584764% 0.2206897%, 100.164% 0.2206897%, 99.8616% 95.1775%, 99.6523% 95.639%, 99.433% 95.97%, 99.1308% 96.3111%, 98.629% 97.0031%, 98.3366% 97.4546%, 98.1173% 97.6851%, 96.8234% 97.675%, 93.1469% 97.344%, 92.4835% 97.2452%, 90.2133% 96.9436%, 88.3226% 96.652%, 87.2269% 96.4868%, 83.5082% 95.97%, 82.1804% 95.8082%, 81.1492% 95.6845%, 80.312% 95.6159%, 79.4223% 95.5672%, 78.6555% 95.5342%, 77.9501% 95.5104%, 75.1753% 95.40%, 72.2927% 95.6038%, 67.1447% 96.3111%, 63.92245% 96.6537%, 59.17744% 97.1135%, 54.86474% 97.4546%, 52.223% 97.755%, 43.4619% 98.598%, 41.0701% 98.8086%, 36.5278% 99.1697%, 34.3369% 99.4222%, 31.5673% 99.7315%, 28.9358% 99.962%, 26.7993% 100.0769%, 25.40095% 100.107%, 23.33538% 100.133%, 20.52985% 100.1928%, 17.45237% 100.2196%, 15.6607% 100.158%, 13.95125% 100.0824%, 12.05077% 99.962%, 11.03744% 99.962%, 9.7848% 99.8517%, 5.69145% 99.1697%, 4.45883% 98.8286%, 2.996917% 98.1466%, 1.608104% 96.8828%, 0.511669% 93.4624%, 0.2192867% 90.1524%, 0.2192867% 79.1993%, 0.511669% 73.492%, 0.584764% 65.508%, 0.584764% 0.2206897%);
+
+        img {
+          width: 100%;
+        }
+
+        @media screen and (min-width: $xs-tablet) and (max-width: 920px) {
+          max-width: 227px;
+        }
+
+        @media(max-width: $xs-tablet) {
+          max-width: 90%;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      .callout-copy-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-self: center;
+        padding: 2.2rem 4rem;
+        border-radius: 2rem;
+        border: 2px solid rgba($green600, 0.4);
+        margin-left: -2rem;
+
+        @media(max-width: $xs-tablet){
+          padding: 1.5rem;
+          padding-top: 20rem;
+          margin-top: -17rem;
+          margin-left: 0rem;
+          text-align: center;
+        }
+
+        .callout-title {
+          padding: 0;
+          display: block;
+          flex-grow: 1;
+          width: 100%;
+          line-height: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .callout-description-wrapper {
+          @media(max-width: 926px){
+            display: block;
+          }
+
+          @media(max-width: $xs-tablet){
+            margin: 0;
+          }
+            
+          .callout-description {
+            flex-grow: 1;
+            padding-bottom: 1rem;
+            color: $black;
+
+            @media(max-width: $xs-tablet){
+              margin: 0;
+              padding-top: 1rem;
+              padding-bottom: 2.2rem;
+            }
+            .ie & {
+              max-width: none;
+            }
+          .fb-rte-wrapper {
+            font-family: $primaryType;
+            margin-top: .4rem;
+            margin-bottom: 0;
+
+              @media (max-width: $xs-tablet) {
+                font-size: 1.6rem !important;
+                line-height: 2.2rem;
+              }
+            }
+          }
+        }
+        .callout-btn {
+          @media screen and (max-width: $xs-tablet) {
+            a {
+              width: 100%;
+              font-size: 1.8rem;
+              text-align: center;
+              padding: 2.2rem 0;
+              line-height: 0.89;
+            }
+          }
+          @media(max-width: $xs-tablet){
+            text-align: center;
+          }
+        }
+      }
+      &.right-text {
+        .callout-image {
+          order: 1;
+        }
+        .callout-copy-wrapper {
+          margin-left: 0;
+          margin-right: -2rem;
+
+          @media(max-width: $xs-tablet) {
+            margin-right: 0;
+          }
+        }
+        @media(max-width: $xs-tablet){
+          .callout-image {
+            order: 0;
+          }
+          .callout-copy-wrapper {
+            order: 1;
+            background-position-x: center;
+            .callout-description {
+              margin: auto;
+            }
+            .callout-title {
+              margin: auto;
+            }
+          }
+        }
+      }
+
+      .app-list {
+        display: inline-block; 
+
+        a {
+          display: inline-block;
+          margin: 0 1.4rem;
+
+          &:first-of-type {
+            margin-left: 0;
+
+            @media screen and (max-width: $xs-tablet) {
+              margin-left: 1.2rem;
+            }
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+  }
+
+  &.gold-theme  {
+    .callout-copy-wrapper {
+      border: 2px solid rgba($gold500, 0.4);
+    }
+  }
+  &.mandarin-theme  {
+    .callout-copy-wrapper {
+      border: 2px solid rgba($mandarin400, 0.4);
+    }
+  }
+
+  &.blue-theme  {
+    .callout-copy-wrapper {
+      border: 2px solid rgba($blue600, 0.4);
+    }
+  }
+}

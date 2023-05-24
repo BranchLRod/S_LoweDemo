@@ -1,0 +1,492 @@
+.basket-structure {
+  .basket-component {
+    position: relative;
+    transform: none;
+    left: 0;
+    display: inline-block;
+    max-width: none;
+    border-radius: initial;
+    box-shadow: none;
+    top: 0;
+
+    @media screen and (max-width: $xs-tablet) {
+      background: $white;
+    }
+
+    .basket-wrapper {
+      background-color: $white;
+      max-width: 55rem;
+      margin: 0 auto;
+      margin-bottom: 3.5rem;
+
+      @media screen and (max-width: $xs-tablet) {
+        background: $green1300;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .basket-preheader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .item-numbers {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    font-family: $primaryType;
+    color: $black;
+  }
+
+  .basket-generic-errors-container{
+    .error-message {
+      display: inline-flex;
+      font-family: $primaryType;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $red600;
+      margin-bottom: 1.8rem;
+      text-align: left;
+      padding-left: 2rem;
+      &::before {
+        content: "";
+        background-image: url('../img/icons/input-invalid.svg');
+        background-size: cover;
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        position: absolute;
+        margin-left: -2rem;
+      }
+    }
+  }
+
+  .basket-title {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .basket-total-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .item-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .item-name {
+    position: relative;
+  }
+  
+  .item-cal,
+  .item-name {
+    margin-bottom: .4rem;
+  }
+
+  .item-name,
+  .item-cal,
+  .item-ingredients,
+  .item-price,
+  .item-quantity {
+    font-family: $primaryType;
+  }
+
+  .item-price {
+    max-width: 100%;
+  }
+
+  .item-image {
+    margin-right: 1.2rem;
+  }
+
+  .basket-subtotal-items,
+  .basket-tax-value,
+  .basket-tip-value,
+  .tax-fees-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: $primaryType;
+  }
+
+  .tooltip-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .tooltip {
+    margin-left: .8rem;
+
+    svg {
+      fill: $green300;
+    }
+  }
+
+  .basket-subtotal-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .basket-discount-code {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &.error {
+      &:after {
+        content: url("../img/icons/input-invalid.svg");
+        position: absolute;
+        right: 6.6rem;
+        top: .4rem;
+      }
+    }
+
+    &.birthday,
+    &.sale {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      font-family: $primaryType;
+      color: $black;
+      line-height: 1.33;
+
+      .code {
+        font-weight: 500;
+        line-height: 1.2;
+      }
+    }
+
+    .error-label {
+      bottom: 0;
+      top: auto;
+    }
+
+    input {
+      font-family: $primaryType;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $gray700;
+      width: 100%;
+      background: transparent;
+      border: 1px solid transparent;
+      border-bottom: 2px solid $green300;
+      padding-bottom: .4rem;
+
+      &::placeholder {
+        color: $gray700;
+        opacity: 1;
+        font-weight: 400;
+      }
+
+      &[disabled] {
+        border-bottom: 2px solid $green300 !important;
+        color: $gray700 !important;
+      }
+
+      &.error {
+        padding-right: 2rem;
+      }
+    }
+
+    .placeholder {
+      position: absolute;
+      top: -1.5rem;
+      left: 0;
+    }
+
+    button {
+      font-family: $primaryType;
+      font-size: 1.8rem;
+      line-height: 1;
+      border: 1px solid transparent;
+      background: transparent;
+      font-weight: 500;
+      color: $green300;
+      padding: 0;
+      margin-left: 1.3rem;
+
+      &:focus {
+        outline: 2px solid $green300;
+        outline-offset: 6px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .basket-special-instructions-wrapper {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+
+    @media screen and (max-width: $xs-tablet) {
+      padding-bottom: 3rem;
+    }
+    
+    .basket-special-instruction-title {
+      font-family: $primaryType;
+      font-size: 1rem;
+      color: $gray700;
+      margin-bottom: 1rem;
+    }
+
+    .instruction {
+      font-family: $primaryType;
+      font-size: 1.5rem;
+      line-height: 1.33;
+      height: 3rem;
+      background-color: transparent;
+      border: 0;
+      border-bottom: .2rem solid $green300;
+      padding-bottom: .7rem;
+
+      &::placeholder {
+        color: $black;
+        opacity: 1;
+      }
+
+      &:focus {
+        outline: 2px solid $green300;
+        outline-offset: 6px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .basket-footer {
+    position: relative;
+  }
+
+  .basket-item {
+    &::after,
+    &::before {
+      background-size: cover;
+    }
+  }
+
+  .menu-item-card-component {
+    .card-body {
+      @media screen and (max-width: $xs-tablet) {
+        margin-bottom: 0;
+      }
+        
+      .info-text {
+        text-align: center;
+      }
+    }
+
+    .primary-button {
+      color: $black;
+      background: $gold500;
+    }
+  }
+
+  .sub-category-section-component {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: .3rem;
+      background-image: url("../img/divider-pale-blue.svg");
+      background-size: contain;
+      position: absolute;
+      top: 0;
+
+      @media screen and (max-width: $xs-tablet) {
+        background-size: cover;
+      }
+    }
+
+    .subcategory-header {
+      justify-content: center;
+      
+      @media screen and (max-width: $xs-tablet) {
+        justify-content: flex-start;
+      }
+      
+      h1, h2, h3, h4, h5, h6, .h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .basket-component {
+    &.empty  {
+      background: $white;
+
+      .basket-header {
+        padding: 2.5rem 0;
+
+        @media screen and (max-width: $xs-tablet) {
+          padding: 0 0 2rem;
+        }
+      }
+
+      .basket-title {
+        text-align: center;
+        
+        @media screen and (max-width: $xs-tablet) {
+          text-align: left;
+        }
+
+        h1, h2, h3, h4, h5, h6, .h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
+          font-size: 3.6rem;
+          font-weight: bold;
+          margin-bottom: 0;
+
+          @media screen and (max-width: $xs-tablet) {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      .basket-info {
+        font-family: $primaryType;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.5;
+        color: $black;
+        margin-bottom: .6rem;
+      }
+
+      .basket-body {
+        max-width: 27.4rem;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4.7rem;
+
+        @media screen and (max-width: $xs-tablet) {
+          margin-bottom: 1.8rem;
+        }
+
+        img {
+          width: 100%;
+          max-width: 7.2rem;
+          margin-bottom: 1.46rem;
+
+          @media screen and (max-width: $xs-tablet) {
+            max-width: 5.2rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      ~ .sub-category-section-component {
+        padding-top: 4rem;
+        margin-top: 0;
+
+        @media screen and (max-width: $xs-tablet) {
+          padding-top: 1rem;
+        }
+
+        &:after {
+          content: none;
+        }
+
+        &.wave-top {
+          &:before {
+            @media screen and (max-width: $xs-tablet) {
+              clip-path: polygon(0% 6.25%, 0.7421333333333333% 7.8125%, 2.558666666666667% 11.075%, 4.2024% 13.575000000000001%, 5.246666666666667% 15%, 6.953333333333333% 17.08125%, 8.565333333333333% 18.787499999999998%, 9.469866666666666% 19.643749999999997%, 11.3168% 21.16875%, 12.010133333333332% 21.66875%, 13.8432% 22.8125%, 14.890133333333333% 23.35%, 16.262666666666668% 23.9375%, 18.224% 24.5625%, 18.942133333333334% 24.71875%, 20.447466666666667% 24.93125%, 21.866666666666667% 25%, 23.9128% 24.90625%, 25.0896% 24.775%, 27.116266666666668% 24.43125%, 28.422933333333333% 24.1375%, 29.338933333333333% 23.90625%, 30.909066666666668% 23.45625%, 32.086133333333336% 23.08125%, 33.72266666666667% 22.50625%, 35.029333333333334% 22.0125%, 36.336% 21.4875%, 37.64266666666666% 20.9375%, 39.0784% 20.3125%, 40.97413333333333% 19.44375%, 42.217333333333336% 18.85625%, 43.6624% 18.15625%, 45.68906666666667% 17.15625%, 47.1912% 16.400000000000002%, 48.888000000000005% 15.543750000000001%, 50.91466666666666% 14.512500000000001%, 52.87733333333333% 13.518749999999999%, 54.14133333333333% 12.89375%, 55.9056% 12.01875%, 57.6808% 11.15625%, 59.00426666666666% 10.53125%, 60.96906666666666% 9.63125%, 62.19573333333334% 9.0875%, 63.27573333333333% 8.63125%, 64.5072% 8.13125%, 65.63733333333333% 7.6937500000000005%, 67.06053333333334% 7.175%, 68.38986666666666% 6.7250000000000005%, 69.86666666666666% 6.25%, 71.3896% 5.831250000000001%, 72.96159999999999% 5.45%, 74.58453333333334% 5.106249999999999%, 76.10746666666667% 4.83125%, 77.97413333333334% 4.5562499999999995%, 80.77413333333334% 4.2625%, 82.19946666666667% 4.16875%, 83.57546666666667% 4.1125%, 85.29546666666667% 4.1125%, 86.32746666666667% 4.1125%, 87.70346666666666% 4.15625%, 89.964% 4.3062499999999995%, 91.44% 4.44375%, 93.06213333333334% 4.65625%, 94.4872% 4.8875%, 95.91226666666667% 5.1625%, 97.4856% 5.51875%, 98.37013333333333% 5.75%, 100% 6.25%, 100% 100%, 0% 100%, 0% 6.25%);
+            }
+          }
+        }
+
+        &.cold-green-theme {
+          background-color: rgba($green1300, 0.4); 
+
+          &:before {
+            @media screen and (max-width: $xs-tablet) {
+              background-color: rgba($green1300, 0.4); 
+            }
+          }
+        }
+
+        .subcategory-header {
+          h1, h2, h3, h4, h5, h6, .h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
+            font-size: 3.6rem;
+
+            @media screen and (max-width: $xs-tablet) {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    } 
+  }
+  
+  .triangle-link {
+    font-size: 1.4rem;
+    color: $green300;
+
+    &:after {
+      margin-left: .5rem;
+      width: .47rem;
+      height: .8rem;
+    }
+  }
+
+  .footer-info {
+    text-align: center;
+    max-width: 29.1rem;
+    margin: 0 auto;
+
+    .footer-info-title {
+      margin-top: .8rem;
+      font-size: 1.8rem;
+      font-family: $primaryType;
+      font-weight: bold;
+      line-height: 1.11;
+    }
+
+    .footer-info-subtitle {
+      margin-top: .8rem;
+      font-size: 1.5rem;
+      font-family: $primaryType;
+      line-height: 1.27;
+    }
+  }
+
+  .order-delivery-instructions-wrapper {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    max-width: 50rem;
+    margin: 1rem auto 2rem;
+
+    .instruction-title {
+      font-family: $primaryType;
+      font-size: 1rem;
+      color: $gray700;
+      margin-bottom: 1rem;
+    }
+    
+    .instruction {
+      font-family: $primaryType;
+      font-size: 1.5rem;
+      line-height: 1.33;
+      color: $black; 
+      height: 3rem;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 0.2rem solid $green300;
+      padding-bottom: .7rem;
+
+      &::placeholder {
+        opacity: 1;
+      }
+    }
+  }
+}

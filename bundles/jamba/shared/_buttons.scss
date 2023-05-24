@@ -1,0 +1,302 @@
+.primary-button,
+.btn.primary {
+  background: $green300;
+  color: $white;
+  border-radius: 500px;
+  padding: 1.2rem 3.4rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-shadow: none !important;
+  min-width: 19rem;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  border: 0;
+  &.loading {
+		position: relative;
+		&::before {
+			background: url("../img/icons/jamba-swirl.gif") $green300 center center no-repeat;
+			background-size: 50%;
+			border-radius: 500px;
+			bottom: 0;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+		}
+	}
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &.facebook {
+    background: url('../img/icons/facebook.svg') calc(100% - 2.4rem) center no-repeat;
+    background-color: $facebook;
+    padding-right: 5rem;
+    &:hover,
+    &:focus {
+      background: url('../img/icons/facebook.svg') calc(100% - 2.4rem) center no-repeat;
+      background-color: darken($facebook, 5%);
+      color: $white;
+    }
+  }
+
+  &.fcs-third-party {
+    padding-right: 4rem;
+    & .fcs-third-party-icon {
+        position: relative;
+        display: inline;
+        right: 0;
+    }
+    & .fcs-third-party-icon::after {
+      position: relative;
+    }
+  }
+
+    &:after {
+    content: "";
+    .highlight-footer & {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $black;
+    background: $gold500;
+  }
+
+  &.inverted {
+    color: $black;
+    background: $gold500;
+    
+    &:hover,
+    &:focus {
+      background: $green300;
+      color: $white;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background: $blue800;
+    color: $disabled;
+  }
+
+  &.thinner {
+    padding: 1.1rem 1rem !important;
+  }
+}
+
+.secondary-button,
+.btn.secondary {
+  background: $gold500;
+  background: url('../img/organic-button.svg') center center no-repeat;
+  background-size: 100% 100%;
+  color: $black;
+  font-size: 1.8rem;
+  padding: 1.15rem 2.2rem;
+  display: inline-block;
+  text-shadow: none !important;
+  
+  &:hover,
+  &:focus {
+    background: $green300;
+    background: url('../img/organic-button-hover.svg') center center no-repeat;
+    background-size: 100% 100%;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &.arrow {
+    &:hover,
+    &:focus {
+      &::after {
+        color: $white;
+      }
+    }
+  }
+}
+
+.sticky-button-wrapper {
+  width: 100%;
+  background: $beige700;
+  padding: 1.8rem;
+  color: $black;
+  position: fixed !important;
+  text-align: center;
+  z-index: 999;
+  top: auto !important;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  margin: 0;
+  box-shadow: 0 -1px 3px 0 $blue600;
+
+  @media screen and (max-width: $xs-tablet) {
+    padding: 1rem 1.5rem;
+  }
+
+  &#start-order {
+    @media screen and (max-width: $xs-tablet) and (max-height: 500px) {
+      display: none;
+    }
+  }
+
+  .details-wrapper {
+    @media screen and (max-width: $xs-tablet) {
+      flex-basis: 100%;
+    }
+
+    .price,
+    .calories {
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: $primaryType;
+  
+      @media screen and (max-width: $xs-tablet) {
+        display: block;
+      }
+    }
+  
+    .price {
+      & + .calories {
+        &:before {
+          content: "";
+          height: 2.2rem;
+          width: 2px;
+          background: $gold500;
+          margin: 0 1.6rem;
+          vertical-align: middle;
+          display: inline-block;
+  
+          @media screen and (max-width: $xs-tablet) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .calories {
+      @media screen and (max-width: $xs-tablet) {
+        font-size: 1.5rem;
+        color: $gray900;
+      }
+    }
+  }
+
+  a {
+    margin-left: 5rem;
+
+    @media screen and (max-width: $xs-tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &.simple {
+    display: none;
+    background: $gold500;
+    padding: 0;
+    z-index: 9;
+
+    @media screen and (max-width: $xs-tablet) {
+      display: block;
+    }
+
+    @media screen and (max-width: $xs-tablet) and (max-height: 500px) {
+      display: none;
+    }
+
+    .sign-up-page & {
+      @media screen and (max-width: $xs-tablet) {
+        display: none;
+      }
+    }
+
+    .simple-button {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 0.89;
+      color: $black;
+      padding: 2.1rem 0 2.3rem;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  &.unavailable {
+    display: none;
+  }
+}
+
+.tertiary-button, 
+.btn.tertiary {
+  background: $green700;
+  color: $black;
+  border-radius: 500px;
+  padding: 1.2rem 3.4rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-shadow: none !important;
+  min-width: 190px;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  border: 0;
+  
+  &:hover {
+    text-decoration: none;
+    background: $gold500;
+    outline: none;
+  }
+  &:focus {
+    color: $black;
+    background: $gold500;
+  }
+}
+
+.item-favorite {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  height: 2rem;
+  max-width: 1.8rem;
+  width: 100%;
+  padding: 0;
+  border: none;
+
+  &:after {
+    content : url("../img/icons/fav.svg");
+    display: block;
+    line-height: 1;
+  }
+
+  &.selected {
+    &:after {
+      content : url("../img/icons/fav-fill.svg");
+    }
+  }
+
+  &.disabled {
+    opacity: .75;
+  }
+}
+
+.ie {
+  body {
+    &.modal-open {
+      .sticky-button-wrapper {
+        padding-right: 1.8rem !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
