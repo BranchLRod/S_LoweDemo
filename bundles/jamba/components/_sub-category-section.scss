@@ -1,0 +1,393 @@
+.sub-category-section-component {
+  padding: 3.6rem 0 6.2rem;
+
+  @media screen and (max-width: $xs-tablet){
+    padding-bottom: 3.2rem;
+  }
+
+  .subcategory-header {
+    font-family: $primaryType;
+    font-weight: 500;
+    line-height: 0.83;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    color: $black;
+    z-index: 2;
+    position: relative;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-around;
+    }
+
+    .primary-button {
+      width: 19rem;
+      text-align: center;
+
+      @media screen and (max-width: $xs-tablet){
+        display: none;
+      }
+    }
+
+    .arrow {
+      display: none;
+      font-family: $primaryType;
+      font-weight: 500;
+      border-bottom: .2rem solid transparent;
+      
+      
+      @media screen and (max-width: $xs-tablet){
+        display: block;
+        white-space: nowrap;
+      }
+
+      &:after {
+        padding-bottom: 0.4rem;
+      }
+
+      &:hover,
+      &:focus {
+        color: $green300;
+        text-decoration: none;
+        border-bottom: .2rem solid $green300;
+      }
+    }
+  }
+
+  .card-footer {
+    .secondary-button {
+      &:after {
+        color: $green300;
+      }
+
+      &:hover {
+        &:after {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .fcs-container {
+    @media screen and (max-width: $xs-tablet){
+      position: relative;
+    }
+  }
+
+  .row {
+    justify-content: center;
+
+    @media screen and (max-width: $xs-tablet){
+      flex-wrap: nowrap;
+      justify-content: start;
+      overflow: auto;
+    }
+
+    &.right-gradient {
+      &::after {
+        content: "";
+        transition: opacity 0.2s;
+        opacity: 1;
+        position: absolute;
+        width: 25%;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: -moz-linear-gradient(left, rgba($white,0) 20%, rgba($white,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba($white,0) 20%,rgba($white,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba($white,0) 20%,rgba($white,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    
+        @media(min-width: $small-tablet) {
+          display: none;
+        }
+      }
+    }
+    
+    &.left-gradient {
+      &::before {
+        content: "";
+        transition: opacity 0.2s;
+        opacity: 1;
+        position: absolute;
+        width: 25%;
+        height: 90%;
+        bottom: 0;
+        right: auto;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: -moz-linear-gradient(left, rgba($white,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba($white,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba($white,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    
+        @media(min-width: $small-tablet) {
+          display: none;
+        }
+      }
+    }
+
+    .col {
+      max-width: 31rem;
+      flex: none;
+      width: 59%;
+    }
+  }
+
+  &.wave-top {
+    margin-top: 4rem;
+    padding-top: 8rem;
+    position: relative;
+    
+    @media screen and (max-width: $xs-tablet){
+      padding-top: 2rem;
+    }
+
+    @media screen and (min-width: $small-tablet) {
+      clip-path: polygon(99.93065187239945% 4.714285714285714%, 99.93065187239945% 100%, 0.06934812760055478% 100%, 0.06934812760055478% 1.5714285714285716%, 1.9417475728155338% 2%, 1.9417475728155338% 2.142857142857143%, 2.496532593619972% 2.142857142857143%, 2.496532593619972% 2.2857142857142856%, 3.1206657420249653% 2.2857142857142856%, 3.1206657420249653% 2.4285714285714284%, 3.6754507628294033% 2.4285714285714284%, 3.6754507628294033% 2.571428571428571%, 6.310679611650485% 3%, 6.310679611650485% 3.1428571428571432%, 7.073509015256588% 3.1428571428571432%, 7.073509015256588% 3.2857142857142856%, 7.905686546463246% 3.2857142857142856%, 7.905686546463246% 3.428571428571429%, 8.876560332871012% 3.428571428571429%, 10.194174757281553% 3.571428571428571%, 11.71983356449376% 3.7142857142857144%, 14.21636615811373% 3.571428571428571%, 16.08876560332871% 3.428571428571429%, 18.169209431345354% 3.428571428571429%, 18.169209431345354% 3.2857142857142856%, 20.041608876560332% 3.2857142857142856%, 20.041608876560332% 3.1428571428571432%, 21.63661581137309% 3.1428571428571432%, 23.231622746185852% 3%, 24.618585298196948% 2.857142857142857%, 27.323162274618586% 2.4285714285714284%, 36.615811373092924% 1.4285714285714286%, 36.615811373092924% 1.2857142857142856%, 38.141470180305134% 1.1428571428571428%, 38.90429958391123% 1.1428571428571428%, 38.90429958391123% 1%, 40.01386962552011% 1%, 40.01386962552011% 0.8571428571428572%, 41.19278779472954% 0.8571428571428572%, 41.19278779472954% 0.7142857142857143%, 42.302357836338416% 0.7142857142857143%, 42.44105409153953% 0.5714285714285714%, 43.689320388349515% 0.5714285714285714%, 43.75866851595007% 0.4285714285714286%, 45.07628294036061% 0.4285714285714286%, 46.67128987517337% 0.2857142857142857%, 46.67128987517337% 0.14285714285714285%, 48.6130374479889% 0.14285714285714285%, 51.45631067961165% 0%, 57.76699029126213% 0%, 60.124826629680996% 0.14285714285714285%, 60.81830790568654% 0.14285714285714285%, 60.81830790568654% 0.2857142857142857%, 63.176144244105416% 0.2857142857142857%, 63.176144244105416% 0.4285714285714286%, 65.18723994452151% 0.4285714285714286%, 68.7239944521498% 0.8571428571428572%, 70.31900138696255% 1%, 73.23162274618585% 1.1428571428571428%, 74.61858529819695% 1.2857142857142856%, 75.93619972260748% 1.4285714285714286%, 77.25381414701803% 1.5714285714285716%, 77.25381414701803% 1.7142857142857144%, 78.91816920943134% 1.8571428571428572%, 79.68099861303745% 1.8571428571428572%, 79.68099861303745% 2%, 82.03883495145631% 2.142857142857143%, 82.03883495145631% 2.2857142857142856%, 83.14840499306518% 2.2857142857142856%, 83.14840499306518% 2.4285714285714284%, 84.25797503467406% 2.4285714285714284%, 84.25797503467406% 2.571428571428571%, 85.71428571428571% 2.7142857142857144%, 86.47711511789181% 2.7142857142857144%, 86.47711511789181% 2.857142857142857%, 87.51733703190014% 2.857142857142857%, 87.51733703190014% 3%, 88.55755894590847% 3%, 88.55755894590847% 3.1428571428571432%, 89.94452149791957% 3.2857142857142856%, 90.63800277392511% 3.2857142857142856%, 90.63800277392511% 3.428571428571429%, 91.60887656033287% 3.428571428571429%, 91.60887656033287% 3.571428571428571%, 92.57975034674064% 3.571428571428571%, 92.57975034674064% 3.7142857142857144%, 93.5506241331484% 3.7142857142857144%, 93.5506241331484% 3.8571428571428568%, 94.52149791955617% 3.8571428571428568%, 94.52149791955617% 4%, 95.49237170596395% 4%, 95.49237170596395% 4.142857142857142%, 96.46324549237171% 4.142857142857142%, 96.46324549237171% 4.285714285714286%, 97.43411927877948% 4.285714285714286%, 97.43411927877948% 4.428571428571428%, 98.3356449375867% 4.428571428571428%, 98.3356449375867% 4.571428571428571%);
+    }
+
+    &:before {
+      @media screen and (max-width: $xs-tablet){
+        content: "";
+        background-color: $green1000;
+        display: block;
+        width: 100%;
+        height: 4.53vw;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        z-index: 2;
+        left: 0;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 82.35294%, 74.66667% 35.29412%, 62.13333% 11.76471%, 52.53333% 0%, 32% 0%, 24% 5.88235%, 10.93333% 17.64706%, 0% 29.41176%, 0% 100%);
+      }
+    }
+  }
+
+  &.gold-theme {
+    background-color: $gold500;
+    &.wave-top {
+      &::before {
+        @media screen and (max-width: $xs-tablet){
+          background-color: $gold500;
+        }
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($gold500,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($gold500,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($gold500,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($gold500,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($gold500,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($gold500,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  &.mandarin-theme {
+    background-color: $mandarin700;
+    &.wave-top {
+      &::before {
+        @media screen and (max-width: $xs-tablet){
+          background-color: $mandarin700;
+        }
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($mandarin700,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($mandarin700,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($mandarin700,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($mandarin700,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($mandarin700,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($mandarin700,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  &.mint-theme {
+    background-color: $green1000;
+    &.wave-top {
+      &::before {
+        @media screen and (max-width: $xs-tablet){
+          background-color: $green1000;
+        }
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($green1000,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($green1000,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($green1000,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($green1000,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($green1000,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($green1000,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  &.blue-theme {
+    background-color: $blue600;
+    &.wave-top {
+      &::before {
+        @media screen and (max-width: $xs-tablet){
+          background-color: $blue600;
+        }
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($blue600,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($blue600,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($blue600,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($blue600,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($blue600,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($blue600,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  &.gray-theme {
+    background-color: $blue900;
+    &.wave-top {
+      &::before {
+        @media screen and (max-width: $xs-tablet){
+          background-color: $blue900;
+        }
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($blue900,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($blue900,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($blue900,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($blue900,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($blue900,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($blue900,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  &.light-beige-theme {
+    background-color: $beige600;
+    &.wave-top {
+      &::before {
+        background-color: $beige600;
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($beige600,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($beige600,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($beige600,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($beige600,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($beige600,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($beige600,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  &.cold-green-theme {
+    background-color: $green1300;
+    &.wave-top {
+      &:before {
+        @media screen and (max-width: $xs-tablet){
+          background-color: $green1300;
+        }
+      }
+    }
+
+    .row {
+      &.left-gradient {
+        &::before {
+          background: -moz-linear-gradient(left, rgba($green1300,1)6%, rgba($white,0) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($green1300,1) 6%, rgba($white,0) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($green1300,1) 6%, rgba($white,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+      &.right-gradient {
+        &::after {
+          background: -moz-linear-gradient(left, rgba($white,0)6%, rgba($green1300,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, rgba($white,0) 6%, rgba($green1300,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, rgba($white,0) 6%, rgba($green1300,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+
+  .menu-item-card-component {
+    min-width: 1.9rem;
+  }
+}
+
+
+.ie {
+  .sub-category-section-component {
+    .row {
+      .col {
+        flex-basis: 31rem;
+      }
+    }
+  }
+}

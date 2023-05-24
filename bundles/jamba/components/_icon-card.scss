@@ -1,0 +1,40 @@
+.icon-card-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  img {
+    margin: 0 auto;
+    height: 20rem;
+  } 
+  
+  div {
+    font-size: 2rem;
+    font-family: $primaryType;
+    line-height: 1.52;
+    color: $black;
+    text-align: center;
+    width: 100%;
+    max-width: 26.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  &:last-of-type {
+    margin-bottom: 7rem;
+  }
+
+  .ie & {
+    display: block;
+    text-align: center;
+  }
+
+  .description-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .description-disclaimer {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,151 @@
+.highlight-card-component {
+  position: relative;
+  margin-top: 4.8rem;
+  margin-bottom: 1.8rem;
+
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+
+  @media screen and (max-width: $xs-tablet) {
+    margin-top: 4rem;
+    margin-bottom: -3.2rem;
+    width: 100%;
+    flex-basis: auto;
+  
+    & + .highlight-card-component {
+      &:not(:first-of-type) {
+        margin-top: 5rem;
+      }
+    }
+    
+    &:last-of-type {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  .h5-like {
+    display: block;
+    margin-top: 2rem;
+    font-size: 2.4rem;
+  }
+
+  .image-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 36.4rem;
+    margin: 0 auto;
+
+    img {
+      max-width: 100%;
+      border-top: 1rem solid $gold500;
+      border-radius: 1rem 1rem 0 0;
+      overflow: hidden;
+    }
+  }
+  
+  .fi-card {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    top: -2rem;
+    transform: translateX(-50%);
+    background-color: transparent;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    text-align: center;
+
+    @media screen and (max-width: $mid-mobile) {
+      max-width: 29.5rem;
+    }
+
+    .fi-card-frame {
+      border-radius: .6rem;
+      padding: 1.6rem 2rem 1.5rem;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      line-height: 1;
+      max-width: 31rem;
+      width: 100%;
+    }
+
+    .description {
+      width: 100%;
+      max-width: 35rem;
+      margin: 0 auto;
+      color: $black;
+    }
+
+    .card-content {
+      max-width: 100%;
+      
+      p {
+        color: $black;
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+    //START themes
+    &.orange-theme {
+
+      .image-wrapper {
+        img {
+          border-color: $mandarin400;
+        }
+      }
+    }
+
+    &.gold-theme {
+
+      .image-wrapper {
+        img {
+          border-color: $gold500;
+        }
+      }
+    }
+  
+    &.blue-theme {
+      
+      .image-wrapper {
+        img {
+          border-color: $blue600;
+        }
+      }
+    }
+  
+    &.mandarin-theme {
+      
+      .image-wrapper {
+        img {
+          border-color: $mandarin700;
+        }
+      }
+    }
+  
+    &.mint-theme {
+      
+      .image-wrapper {
+        img {
+          border-color: $green1000;
+        }
+      }
+    }
+    //END themes
+}
+
+.col {
+  &:last-child {
+    @media screen and (max-width: $xs-tablet) {
+      .basic-card-component {
+        margin-bottom: 5.7rem;
+      }
+    }
+  }
+}

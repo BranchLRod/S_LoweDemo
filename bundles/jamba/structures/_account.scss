@@ -1,0 +1,186 @@
+.account-structure {
+  background: $green1300;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  color: $black;
+  @media screen and (max-width: $xs-tablet) {
+    padding-bottom: 0;
+    padding-top: 1.2rem;
+  }
+  &~footer {
+    margin-top: 0;
+  }
+  .tall-row {
+    min-height: 39.7rem;
+  }
+  .basic-spot-component {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1;
+      margin-bottom: 2rem;
+      font-size: 3.6rem;
+      font-weight: bold;
+      @media screen and (max-width: $xs-tablet) {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .breadcrumb-component {
+    margin-top: 0;
+    &+.section-component {
+      @media screen and (max-width: $xs-tablet) {
+        padding-top: 0;
+        margin-top: 1rem;
+
+      }
+    }
+  } 
+
+  .sidebar {
+    width: 100%;
+    max-width: 40.5rem;
+    min-width: 30rem;
+    @media screen and(max-width: 992px) {
+      max-width: none;
+      min-width: 0;
+    }
+    @media screen and(max-width: $xs-tablet) {
+      padding: 0;
+    }
+    &.hide {
+      @media screen and(max-width: $xs-tablet) {
+        display: none;
+      }
+      &+.main-side {
+        @media screen and(max-width: $xs-tablet) {
+          display: block;
+          padding: 0;
+        }
+      }
+    }
+    .account-progress-component {
+      @media screen and(max-width: $xs-tablet) {
+        flex-direction: column;
+        padding: 2rem;
+      }
+    }
+    .progress-wrapper {
+      @media screen and(max-width: $xs-tablet) {
+        display: block;
+      }
+    }
+    .progress-content-wrapper {
+      padding-left: 2rem;
+      text-align: left;
+    }
+  }
+  .main-side {
+    min-width: 65rem;
+    @media screen and(max-width: $xs-tablet) {
+      display: none;
+      min-width: 0;
+    }
+    .account-progress-component,
+    .account-highlight-component {
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+    }
+    .account-highlight-component {
+      @media screen and(max-width: $xs-tablet) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .account-interior-structure {
+      .account-progress-component {
+        margin: 0; 
+      }
+    }
+    .account-card-component {
+      width: auto;
+      flex: 1 43rem;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+ 
+  }
+  .logout-button {
+    background: $white;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $green300;
+    text-align: center;
+    padding: 2.4rem 2.4rem;
+  }
+  .dietary-preferences-component {
+    max-width: 71rem;
+    margin: 0 auto;
+    @media screen and(max-width: $xs-tablet) {
+      padding: 0 .5rem;
+    }
+    .info {
+      margin: 0 0 4rem;
+    }
+    .checkbox-list {
+      margin-top: 2.5rem;
+      margin-bottom: 6rem;
+      @media screen and(max-width: $xs-tablet) {
+        margin-bottom: 2rem;
+        margin-top: 0;
+      }
+    }
+    .note {
+      margin: 0 0 3.6rem;
+      @media screen and(max-width: $xs-tablet) {
+        margin-bottom: 2rem;
+      }
+    }
+    .primary-button {
+      margin-bottom: 3rem;
+    }
+  }
+  .triangle-link {
+    &.green {
+      color: $green300;
+      &::after {
+        background-image: url("../img/triangle-green.svg");
+      }
+    }
+  }
+}
+
+.ie {
+  .account-structure {
+    .sidebar{
+      min-width: 30rem!important;
+    }
+    .main-side {
+      min-width: 50rem !important;
+      .row:first-child {
+        @media screen and(max-width: 1200px) {
+          display: block;
+          width: 100%;
+        }
+        .col:first-child {
+          flex-grow: 2;
+        }
+        .col:last-child {
+          flex-grow: 1;
+        }
+      }
+      .account-card-component {
+        max-width: 46.6rem;
+        .card-item {
+          min-height: 10rem;
+        }
+      }
+    }
+  }
+}

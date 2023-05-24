@@ -1,0 +1,98 @@
+.main-nav-component {
+  flex-grow: 0;
+
+  ul {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 1.6rem;
+    
+    li {
+      margin-right: 4.6rem;
+      display: inline-block;
+
+      @media screen and (max-width: 1040px) {
+        margin-right: 2rem;
+      }
+
+      @media screen and (max-width: 960px) {
+        margin-right: .8rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a,
+      a:not([href]) {
+        color: $gray500;
+        text-decoration: none;
+        white-space: nowrap;
+        padding-bottom: 0.8rem;
+        padding-top: 0.8rem;
+        padding-left: 0.7rem;
+        display: block;
+        text-align: center;
+        line-height: 2.2rem;
+        cursor: pointer;
+        text-shadow: none !important;
+
+        &:before {
+          content: attr(data-title);
+          font-family: $primaryType;
+          font-weight: 700;
+          position: static;
+          display: block;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden;
+          font-size: 1em;
+          width: auto;
+        }
+        
+        &.hover,
+        &:focus,
+        &.fcs-nav-active {
+          color: $green300;
+          font-family: $primaryType;
+          font-weight: 700;
+          background-image: url('../img/selected.svg');
+          background-repeat: no-repeat;
+          background-size: 2.675em;
+          background-position: bottom left;
+
+          &.fcs-locations {
+            background-image: url("../img/selected.svg"), url("../img/icons/location-fill.svg");
+            background-size: 2.675em, 1em 1.5em;
+            background-position: bottom left, .5em center;
+          }
+        }
+      }
+    }
+  }
+
+  .secondary-button {
+    text-align: center;
+  }
+}
+
+.ie, 
+.edge {
+  .main-nav-component {
+    ul {
+      li {
+        a {
+          &:hover,
+          &:focus,
+          &.fcs-nav-active {
+            &.fcs-locations {
+              background-size: 4.6rem 1rem , 1em 1.5em !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
