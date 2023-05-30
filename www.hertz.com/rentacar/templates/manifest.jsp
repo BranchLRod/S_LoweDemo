@@ -1,1 +1,0 @@
-No Content: https://www.hertz.com/rentacar/templates/manifest.jsp?deviceGroup=phone
