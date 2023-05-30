@@ -1,0 +1,3303 @@
+.ww-results,
+.ww-results.touch {
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    border: 2px solid #d3d2d1;
+    background-color: #fff;
+    z-index: 100;
+    *top: 117px;
+    *left: 60px
+}
+
+.ww-results label,
+.ww-results.touch label {
+    font-weight: bold
+}
+
+.ww-results .wL.showDetails,
+.ww-results.touch .wL.showDetails {
+    height: 430px
+}
+
+.ww-results .wL .airplane-space,
+.ww-results.touch .wL .airplane-space {
+    display: block;
+    float: left;
+    margin: 3px 3px 1px 0;
+    width: 13px
+}
+
+.ww-results .wL .ww-item div,
+.ww-results.touch .wL .ww-item div {
+    padding: 5px 10px
+}
+
+.ww-results .wL .ww-name,
+.ww-results.touch .wL .ww-name {
+    color: #355AD8;
+    width: 242px;
+    display: table-cell
+}
+
+.ww-results .wL .ww-name span,
+.ww-results.touch .wL .ww-name span {
+    color: #555
+}
+
+.ww-results .wL .ww-morelink,
+.ww-results.touch .wL .ww-morelink {
+    display: table-cell
+}
+
+.ww-results .wL label,
+.ww-results.touch .wL label {
+    padding: 5px 3px 5px 3px;
+    display: block;
+    background-color: #D3D2D1
+}
+
+.ww-results .ww-moreinfo-container.bl,
+.ww-results.touch .ww-moreinfo-container.bl {
+    padding: 0;
+    margin: 0
+}
+
+.ww-results .ww-moreinfo-container,
+.ww-results.touch .ww-moreinfo-container {
+    left: 300px;
+    height: 430px;
+    width: 270px;
+    position: absolute;
+    background-color: #fff
+}
+
+.ww-results .ww-moreinfo-container .hod-content,
+.ww-results .ww-moreinfo-container #disabled-map,
+.ww-results .ww-moreinfo-container #map,
+.ww-results.touch .ww-moreinfo-container .hod-content,
+.ww-results.touch .ww-moreinfo-container #disabled-map,
+.ww-results.touch .ww-moreinfo-container #map {
+    display: none
+}
+
+.ww-results .ww-moreinfo-container .bl,
+.ww-results.touch .ww-moreinfo-container .bl {
+    padding: 10px 5px;
+    margin: 0 10px
+}
+
+.ww-results .ww-moreinfo-container .divider,
+.ww-results.touch .ww-moreinfo-container .divider {
+    border-top: 1px solid lightGray;
+    margin: 0
+}
+
+.ww-results .ww-moreinfo-container .lb-header,
+.ww-results.touch .ww-moreinfo-container .lb-header {
+    text-align: left
+}
+
+.ww-results .ww-moreinfo-container .backlink,
+.ww-results.touch .ww-moreinfo-container .backlink {
+    display: block
+}
+
+.ww-results .ww-moreinfo-container .backlink .icons-arrow_bl_left,
+.ww-results.touch .ww-moreinfo-container .backlink .icons-arrow_bl_left {
+    display: inline-block
+}
+
+.ww-results .ww-moreinfo-container label,
+.ww-results.touch .ww-moreinfo-container label {
+    margin: 0
+}
+
+#itn-modify-keep-rate {
+    margin-top: 10px
+}
+
+#container.animated-background {
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #fff
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #ededed
+}
+
+.location-details dl {
+    margin-top: 0
+}
+
+.location-details dl dt {
+    margin-top: 0;
+    color: #355AD8;
+    font-weight: bold
+}
+
+button[disabled] {
+    background-color: #ddd;
+    color: #000;
+    border: 2px solid #ddd
+}
+
+.click-indicator {
+    width: 100%;
+    cursor: pointer;
+    color: #355ad8
+}
+
+.click-indicator .click-icon {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 0.8
+}
+
+.click-indicator .link-indicator {
+    text-decoration: underline
+}
+
+#res-home-page {
+    background-color: #fff
+}
+
+#res-home-page #hp-hero-rd {
+    display: none
+}
+
+#res-home-page .hp-hero-img-rd {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top
+}
+
+#res-home-page .hp-hero-desktopImg-rd {
+    display: none
+}
+
+#res-home-page .hp-hero-mobileImg-rd {
+    display: block
+}
+
+#res-home-page .res-form {
+    background-color: #FFF;
+    width: 100%;
+    position: static;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background-color: transparent !important;
+    padding: 0px 20px
+}
+
+#res-home-page .res-form nav {
+    display: none
+}
+
+#res-home-page .res-form nav table {
+    width: 100%
+}
+
+#res-home-page .res-form nav table td {
+    background: #ffd100;
+    color: #000000;
+    text-align: center
+}
+
+#res-home-page .res-form nav table td h2 {
+    font: 1em "Ride", Muli, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    margin: 0px;
+    padding: 8px
+}
+
+#res-home-page .res-form nav table .selected {
+    background: #ffffff
+}
+
+#res-home-page .res-form nav table .selected h2 {
+    cursor: auto;
+    font-family: "Ride", Montserrat, Trebuchet MS, Helvetica, sans-serif;
+    font-weight: bold
+}
+
+#res-home-page .res-form #new-resWidgetHeader {
+    padding: 8px 0px
+}
+
+#res-home-page .res-form #new-resWidgetHeader h1 {
+    color: #000;
+    margin: 0;
+    font-size: 25px;
+    font-weight: normal
+}
+
+#res-home-page .res-form .new-itineraryField label {
+    font-weight: bold !important;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 4px 0;
+    font-size: 14px
+}
+
+#res-home-page .res-form .new-errorList {
+    color: #cd2026;
+    font-size: 14px;
+    padding-bottom: 4px;
+    max-width: 1600px;
+    margin: 0px auto;
+    border: none
+}
+
+#res-home-page .res-form .new-errorList ul {
+    margin: 0;
+    padding: 0
+}
+
+#res-home-page .res-form .new-errorList ul li {
+    background: url(https://images.hertz.com/content/dam/irac/Overlay/enUS/misc/ErrorBox.png) no-repeat left center;
+    padding: 2px 1px 1px 30px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle
+}
+
+#res-home-page .res-form section {
+    padding: 0px
+}
+
+#res-home-page .res-form section #res-form input,
+#res-home-page .res-form section #res-form select {
+    margin-bottom: 5px
+}
+
+#res-home-page .res-form section #res-form #new-rentalInfo-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+#res-home-page .res-form section #res-form #new-rentalInfo-container .rental-info {
+    margin: 12px
+}
+
+#res-home-page .res-form section #res-form #new-resWidget-container {
+    max-width: 1640px;
+    margin-top: 0px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    transition: margin-top 0.2s ease-out;
+    background: #fff
+}
+
+#res-home-page .res-form section #res-form #new-resWidget-containerInner {
+    border-bottom: none;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 150px;
+    transition: padding-top 0.2s ease-out;
+    padding: 0 0
+}
+
+#res-home-page .res-form section #res-form #new-resWidget-topRow-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline
+}
+
+#res-home-page .res-form section #res-form #new-resWidget-topRow-left select#new-locSelect {
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0px 6px;
+    margin-right: 10px;
+    width: 220px
+}
+
+#res-home-page .res-form section #res-form .new-submit-container {
+    width: 100% !important
+}
+
+#res-home-page .res-form section #res-form .new-memInfo-container {
+    width: 100%;
+    padding-bottom: 6px
+}
+
+#res-home-page .res-form section #res-form #new-locationPicker-container {
+    min-width: 250px
+}
+
+#res-home-page .res-form section #res-form #new-locationPicker-container #itn-location {
+    display: flex;
+    flex-direction: column
+}
+
+#res-home-page .res-form section #res-form .new-itineraryField input[type='text'],
+#res-home-page .res-form section #res-form .new-itineraryField select,
+#res-home-page .res-form section #res-form .new-itineraryField .value {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0;
+    color: #222;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+#res-home-page .res-form section #res-form #new-datePicker-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+#res-home-page .res-form section #res-form #new-datePicker-container div {
+    width: 100%
+}
+
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 2px;
+    min-width: 100%
+}
+
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons #new-apply-button {
+    background: #fc0;
+    border: none
+}
+
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons #new-apply-button:hover {
+    box-shadow: 0 0 3px #515151
+}
+
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons .new-cancel-button {
+    display: block;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    min-height: 40px;
+    min-width: 100px;
+    border: 2px solid #000;
+    width: 49%;
+    text-align: center
+}
+
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons #new-apply-button {
+    display: block;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    min-height: 40px;
+    min-width: 100px;
+    width: 49%;
+    text-align: center
+}
+
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons .new-cancel-button:hover,
+#res-home-page .res-form section #res-form .new-discount-modal-container .new-discount-modal-buttons #new-apply-button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    color: #000
+}
+
+#res-home-page .res-form section #res-form .new-submit-container {
+    margin-top: 10px;
+    padding: 5px 0;
+    min-width: 125px
+}
+
+#res-home-page .res-form section #res-form .new-submit-container #new-resSubmit {
+    height: 100%
+}
+
+#res-home-page .res-form section #res-form .new-submit-container .new-submit-container button {
+    max-width: 100%
+}
+
+#res-home-page .res-form section #res-form .new-submit-container button,
+#res-home-page .res-form section #res-form #res-home-page .new-submit-container button.primary,
+#res-home-page .res-form section #res-form #res-home-page #new-lookupSubmit button.primary,
+#res-home-page .res-form section #res-form section.special-offers .new-submit-container button.primary {
+    height: 100%;
+    min-height: 65px;
+    width: 100% !important;
+    font-size: 18px !important;
+    border-radius: 2px;
+    color: #000;
+    background-color: #fc0;
+    border: 2px solid #fc0;
+    opacity: 1;
+    transition: opacity 0.2s
+}
+
+#res-home-page .res-form section #res-form .new-submit-container button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+}
+
+#res-home-page .res-form section #res-form #new-memResMessage {
+    font-size: 18px;
+    margin-bottom: 12px
+}
+
+#res-home-page .res-form section #res-form #new-age-container {
+    position: relative
+}
+
+#res-home-page .res-form section #res-form #new-age-container #itn-age {
+    display: inline-block
+}
+
+#res-home-page .res-form section #res-form #new-age-container #itn-age #ageAdvisory {
+    padding-top: 10px
+}
+
+#res-home-page .res-form section #res-form #new-age-container select {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    cursor: pointer
+}
+
+#res-home-page .res-form section #res-form .new-infoIcon img {
+    width: 20px
+}
+
+#res-home-page .res-form section #res-form #new-ageInfo {
+    z-index: 2;
+    position: absolute
+}
+
+#res-home-page .res-form section #res-form [class^='new-'] a {
+    text-decoration: none !important
+}
+
+#res-home-page .res-form section #res-form .new-infoIcon {
+    margin-left: 5px
+}
+
+#res-home-page .res-form section #res-form [class^='new-icon-'] {
+    font-family: 'icomoon' !important;
+    speak-as: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none !important
+}
+
+#res-home-page .res-form .new-itineraryField input[type='text'],
+#res-home-page .res-form .new-itineraryField select,
+#res-home-page .res-form .new-itineraryField .value {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0;
+    color: #222;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+#res-home-page .res-form .new-resCountry-container {
+    width: 100%
+}
+
+#res-home-page .res-form .new-datePicker-container {
+    display: flex;
+    width: 100%;
+    min-width: 250px
+}
+
+#res-home-page .res-form #new-resWidget,
+#res-home-page .res-form #new-resLookup {
+    max-width: 1600px;
+    margin: 0px auto
+}
+
+#res-home-page .res-form #new-resWidget-topRow-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline
+}
+
+#res-home-page .res-form #new-memResMessage {
+    font-size: 18px;
+    margin-bottom: 12px
+}
+
+#res-home-page .res-form .new-resWidget-link {
+    cursor: pointer;
+    color: #365ad8;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-decoration: none
+}
+
+#res-home-page .res-form #new-resLookup .new-resWidget-row {
+    margin-bottom: 12px
+}
+
+#res-home-page .res-form .new-resWidget-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+#res-home-page .res-form .new-rmcSection {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%
+}
+
+#res-home-page .res-form #new-resLookup-container {
+    flex-direction: column;
+    width: 100%;
+    display: flex
+}
+
+#res-home-page .res-form .new-itineraryField-right {
+    border-left: 1px solid #c4c6cc
+}
+
+#res-home-page section #new-dropoffLoc-containerInner,
+#res-home-page section.res-form #itn-location #one-way,
+#res-home-page section.res-form #new-resLookup,
+#res-home-page section.res-form .location-dates-arrival,
+#res-home-page section.res-form #itn-vehicle-type,
+#res-home-page section.res-form #itn-discounts,
+#res-home-page section.res-form #itn-residency,
+#res-home-page section.res-form #res-submit-btns {
+    display: none
+}
+
+#res-home-page #itn-ta-member-info {
+    display: flex
+}
+
+#res-home-page .slides,
+#res-home-page #sld-ctrl-cont {
+    display: none
+}
+
+#res-home-page #gaq-tab {
+    width: 33%
+}
+
+#res-home-page #rmc-tab {
+    width: 67%
+}
+
+#res-home-page #rmc-section #new-resLookup {
+    border-bottom: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 20px 20px;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 150px;
+    transition: padding-top 0.2s ease-out
+}
+
+#res-home-page #rmc-section button.primary {
+    width: 100%
+}
+
+#res-home-page #rmc-section label {
+    font-weight: bold;
+    padding-top: 10px;
+    display: block
+}
+
+#res-home-page #rmc-section label span.required {
+    color: #000;
+    padding-right: 2px
+}
+
+#res-home-page #rmc-section .add {
+    font-weight: bold;
+    margin-left: 97px
+}
+
+#res-home-page #rmc-section .button {
+    padding: 10px 0px 10px 0px;
+    float: none
+}
+
+#res-home-page #rmc-section>div {
+    padding-bottom: 5px
+}
+
+#res-home-page #rmc-section div#res-message {
+    margin-bottom: 10px
+}
+
+#res-home-page #rmc-section .rental-info div,
+#res-home-page #rmc-section .rental-date {
+    padding: 3px
+}
+
+#res-home-page #rmc-section .rental-info div a.member-res-search,
+#res-home-page #rmc-section .rental-date a.member-res-search {
+    cursor: pointer
+}
+
+#res-home-page #rmc-section .rental-info {
+    background-color: #ffffff
+}
+
+#res-home-page #rmc-section .rental-desc {
+    margin: 10px 0 0 0;
+    overflow: hidden
+}
+
+#res-home-page #rmc-section .veh-desc {
+    background-color: #ffffff;
+    width: 103px;
+    float: left
+}
+
+#res-home-page #rmc-section .veh-desc p {
+    margin-top: 0px;
+    text-align: center
+}
+
+#res-home-page #rmc-section .veh-desc p .or-similar {
+    font-size: 0.8em
+}
+
+#res-home-page #rmc-section .rental-date {
+    width: 98%;
+    background-color: #eeeeee
+}
+
+#res-home-page #rmc-section .header-details-combined {
+    margin-top: 10px
+}
+
+#res-home-page #hp-banner-container-new div {
+    padding-top: 7vh;
+    padding-bottom: 7vh
+}
+
+#res-home-page #hp-banner-ads {
+    display: flex;
+    padding-bottom: 10px;
+    flex-flow: row wrap
+}
+
+#res-home-page #hp-banner-ads div {
+    width: 100%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    margin: 10px 0px;
+    padding-bottom: 5vh
+}
+
+#res-home-page #hp-banner-ads .hp-banner-2,
+#res-home-page #hp-banner-ads .hp-banner-3 {
+    display: block
+}
+
+#member-info-overlay #error-list {
+    margin: 0 0 15px 0px
+}
+
+#member-info-overlay .invalidMember button[disabled] {
+    background-color: #ddd;
+    color: #000
+}
+
+#member-info-overlay .invalidText {
+    padding-bottom: 10px
+}
+
+#member-info-overlay .exceed {
+    display: none
+}
+
+.new-hide {
+    display: none !important
+}
+
+.new-discount-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center
+}
+
+.new-discount-modal {
+    background-color: #fff;
+    width: 100%;
+    margin: 80px auto
+}
+
+.new-discount-modal-header {
+    background-color: #f2f4f7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 10px 20px;
+    align-items: center
+}
+
+.new-discount-modal-header a img {
+    width: 100%;
+    max-width: 20px;
+    height: auto
+}
+
+.new-discount-modal-form {
+    padding: 0 10px
+}
+
+.new-member-points,
+.new-promo-code {
+    padding: 10px
+}
+
+.new-discount-modal #discounts-section {
+    display: block
+}
+
+#discounts-section #affiliations {
+    padding-top: 3px
+}
+
+.new-discount-modal .new-itineraryField {
+    padding: 0px 6px
+}
+
+.new-discount-modal-form .new-itineraryField {
+    margin: 10px 0
+}
+
+.new-itineraryField {
+    border: 1px solid #c4c6cc;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 125px;
+    margin: 5px 0
+}
+
+.new-itineraryField button.new-dnc-button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.new-itineraryField button.new-dnc-button:hover {
+    background: #000;
+    color: #fff
+}
+
+.new-submit-container {
+    margin-top: 10px;
+    min-width: 125px
+}
+
+#new-locationPicker-container {
+    width: 100%
+}
+
+#error-list {
+    margin: 10px 0px
+}
+
+#res-form h3 {
+    font-size: 1em;
+    margin: 0px;
+    display: inline
+}
+
+#res-form input,
+#res-form select {
+    margin-bottom: 5px
+}
+
+#res-form select {
+    width: 100%
+}
+
+#res-form label.checkbox {
+    font-size: 1.2em;
+    display: inline-block;
+    width: 85%;
+    padding-left: 10px
+}
+
+#res-form label.checkbox[for="discounts"] {
+    margin-bottom: 0px
+}
+
+#res-form #one-way,
+#res-form #discounts {
+    vertical-align: top;
+    display: inline-block
+}
+
+#res-form input[type="checkbox"] {
+    margin-top: 2px;
+    float: left;
+    margin-left: 10px
+}
+
+#res-form figure,
+#res-form #quick-res,
+#res-form .icons-info_sm {
+    display: none
+}
+
+#res-form .dnc-button {
+    margin-bottom: 5px
+}
+
+#res-form article {
+    float: left;
+    width: 100%
+}
+
+#res-form article span {
+    font-size: 0.92em;
+    font-weight: normal
+}
+
+#res-form a {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+#res-form hr {
+    height: 2px;
+    background-color: #D2D2D2
+}
+
+#res-form .row {
+    padding: 0px 0px 5px 0px
+}
+
+#res-form .icons-location {
+    cursor: pointer;
+    float: left;
+    margin-left: 10px
+}
+
+#res-form .fts {
+    float: left;
+    width: 86%;
+    margin-top: 5px
+}
+
+#res-form .location select {
+    display: block;
+    width: 100%
+}
+
+#res-form .location a {
+    font-size: 0.92em;
+    padding-bottom: 5px
+}
+
+#res-form .location input[type="text"] {
+    width: 96%
+}
+
+#res-form .one-way-cont {
+    padding-top: 10px;
+    padding-bottom: 2px
+}
+
+#res-form .other-locations {
+    padding: 5px 0px 10px 0px
+}
+
+#res-form .date-time div {
+    font-weight: bold
+}
+
+#res-form .date-time input {
+    width: 35%
+}
+
+#res-form .date-time .date {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 15px;
+    width: 48%;
+    padding: 5px;
+    float: left;
+    font-weight: normal;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px
+}
+
+#res-form .date-time .date div {
+    font-weight: normal;
+    float: left
+}
+
+#res-form .date-time .date .value {
+    width: 85%;
+    min-height: 1px
+}
+
+#res-form .date-time .date .date-cal {
+    width: 15%
+}
+
+#res-form .date-time .time-box {
+    float: right;
+    width: 44%;
+    height: 25px
+}
+
+#res-form .date-header {
+    margin-top: 2px;
+    padding-top: 10px
+}
+
+#res-form #arrival-no-radio-btn.radio {
+    padding-left: 0px
+}
+
+#res-form #arrival-no-radio-btn.radio input[type="text"] {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 100px
+}
+
+#res-form #return-loc {
+    padding-bottom: 10px
+}
+
+#res-form .home-btn-group {
+    text-align: center
+}
+
+#res-form .home-btn-group .button {
+    display: block;
+    width: 100%
+}
+
+#res-form .home-btn-group .button button {
+    width: 100%
+}
+
+#res-form .home-btn-group .button:last-child {
+    padding-right: 0px
+}
+
+#res-form #redeem-section .redeem-cont {
+    background-color: #FFFFFF
+}
+
+#res-form .previous-rentals-link {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    padding-right: 5px
+}
+
+#res-form #pickup-container,
+#res-form #dropoff-container,
+#res-form #age-dropdown {
+    margin-top: 5px
+}
+
+#res-form #ageAdvisory {
+    display: none
+}
+
+#res-form #ageAdvisory .age-advisory-internal-divs {
+    display: inline-block
+}
+
+#res-form #ageAdvisory #age-advisory-image {
+    width: 10%;
+    vertical-align: top;
+    text-align: center
+}
+
+#res-form #ageAdvisory #age-advisory-image img {
+    margin-top: 3px;
+    max-height: 18px
+}
+
+#res-form #ageAdvisory #age-advisory-content {
+    width: 85%;
+    margin-left: 5px
+}
+
+#itn-residency {
+    width: 100%
+}
+
+#itn-residency #customer-residency {
+    font-weight: bold;
+    margin: 10px auto 0px
+}
+
+#discounts-section .discount-cont {
+    background-color: #E2E2E2
+}
+
+#discounts-section .discount-row {
+    padding: 10px 10px 14px
+}
+
+#discounts-section .discount-row label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 0
+}
+
+#discounts-section .discount-row input[type="checkbox"] {
+    margin-top: 2px;
+    float: left
+}
+
+#discounts-section .discount-row input[type="radio"] {
+    margin-right: 5px
+}
+
+#discounts-section .affiliate-member-div {
+    background-color: #E2E2E2
+}
+
+#discounts-section #affiliate-member-verification {
+    margin-top: 5px
+}
+
+#discounts-section #affiliate-member-verification #affiliate-member-join {
+    margin-top: 12px
+}
+
+#discounts-section .discount-row.highlight {
+    background-color: #fffa9f
+}
+
+#discounts-section .corp-customer {
+    padding: 5px 15px
+}
+
+#discounts-section #cdp input[type="radio"] {
+    float: left
+}
+
+#discounts-section #cdp select {
+    width: 90%
+}
+
+#discounts-section #cdp #member-selected-cdp {
+    float: left;
+    width: auto
+}
+
+#discounts-section #cdp .member-other {
+    float: left
+}
+
+#discounts-section #cdp .member-other input[type="text"] {
+    float: none;
+    width: 50%
+}
+
+#discounts-section #cdp .member-other span {
+    float: none;
+    width: ""
+}
+
+#discounts-section #cdp-options-business {
+    padding: 3px 10px;
+    background-color: #E2E2E2
+}
+
+#discounts-section #cdp-options-business p {
+    margin: 0
+}
+
+#discounts-section #cdp-options-business .cdp-options-field-container {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    width: 45%
+}
+
+#discounts-section #cdp-options-business .cdp-options-field-container input[type="radio"] {
+    display: inline-block;
+    float: none
+}
+
+#discounts-section #cdp-options-business .cdp-options-indent {
+    padding-left: 10px
+}
+
+#discounts-section #cdp-options label,
+#discounts-section #cdp-options span {
+    font-size: 0.92em;
+    text-transform: uppercase
+}
+
+#discounts-section #cdp-options label.checkbox {
+    padding-left: 18px
+}
+
+#discounts-section #cdp-options.disabled-label {
+    color: #999
+}
+
+#discounts-section #cdp-options.disabled-label label {
+    color: #999
+}
+
+#discounts-section #affiliations {
+    padding-top: 3px
+}
+
+#discounts-section #affiliations label.checkbox {
+    font-size: 1.2em
+}
+
+#age-overlay-submit {
+    width: 100%
+}
+
+.step-discount .res-form nav,
+.step-discount .location-dates-arrival,
+.step-discount #discount-slideout,
+.step-discount #redeem-section,
+.step-discount #itn-vehicle-type {
+    display: none
+}
+
+.step-discount #discounts-section,
+.step-discount .back-button {
+    display: block
+}
+
+#discounts-section,
+.discount-cont,
+.back-button,
+#car-type-display,
+.modno-geolocation .icons-location,
+.modno-touch .icons-location,
+.seo-link,
+.hp-bg-wrapper,
+.hp-bg-img,
+#hp-bg-color {
+    display: none
+}
+
+.proximity-search {
+    padding-left: 5px
+}
+
+.previous-searches .clear-all-searches .clear-all {
+    float: right;
+    margin: 0 5px 10px 0
+}
+
+.previous-rentals-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none
+}
+
+.previous-rentals-list li {
+    padding: 10px
+}
+
+.previous-rentals-list li.odd {
+    background-color: #efefef
+}
+
+.previous-rentals-list span {
+    float: left
+}
+
+.previous-rentals-list div {
+    margin-left: 20px
+}
+
+.previous-rentals-list p {
+    margin-bottom: 0px
+}
+
+.previous-rentals-list button.right {
+    display: none
+}
+
+.previous-rentals-list button.under {
+    margin-top: 10px
+}
+
+.previous-searches-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none
+}
+
+.previous-searches-list li {
+    padding: 10px
+}
+
+.previous-searches-list li.odd {
+    background-color: #efefef
+}
+
+.previous-searches-list .container {
+    position: relative
+}
+
+.previous-searches-list .content-half>div {
+    margin-bottom: 5px
+}
+
+.previous-searches-list .content-half label {
+    margin-bottom: 0;
+    font-weight: bold
+}
+
+.previous-searches-list .return-location {
+    padding-top: 5px
+}
+
+.previous-searches-list .clear-search {
+    position: absolute;
+    right: 0;
+    cursor: pointer
+}
+
+.previous-searches-list .clear-search span {
+    display: inline-block;
+    margin-left: 5px
+}
+
+.previous-searches-list button {
+    margin-top: 5px
+}
+
+.res-widget-cont.special-offers-widget {
+    display: block
+}
+
+.res-widget-cont.special-offers-widget #error-list {
+    margin: 10px 0px
+}
+
+.res-widget-cont {
+    margin-bottom: 10px
+}
+
+.res-widget-cont #error-list {
+    margin-bottom: 10px
+}
+
+.res-widget-cont #res-form figure {
+    display: none
+}
+
+.res-widget-cont #res-form h3 {
+    display: inline;
+    font-size: 1em;
+    margin: 0
+}
+
+.res-widget-cont #res-form .find-location {
+    display: none
+}
+
+.res-widget-cont #res-form article {
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+.res-widget-cont #res-form .location-dates-arrival {
+    padding: 0 0 10px 0px
+}
+
+.res-widget-cont #res-form .location-dates-arrival hr {
+    display: none
+}
+
+.res-widget-cont #res-form .row {
+    padding-left: 0
+}
+
+.res-widget-cont #car-type-display {
+    display: none
+}
+
+.modno-touch #res-widget #car-type {
+    display: block
+}
+
+#cdp-overlay .cdp-overlay-btnContainer {
+    text-align: center
+}
+
+#cdp-overlay .cdp-overlay-btnContainer button {
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.icons-expand_icon {
+    display: inline-block
+}
+
+.icons-collapse_icon {
+    display: inline-block
+}
+
+.icons-info_icon {
+    display: inline-block;
+    float: right
+}
+
+#age-overlay select {
+    width: 100%
+}
+
+.lb-header {
+    padding: 10px 0 6px 0
+}
+
+#location-closed-container dt {
+    display: block
+}
+
+#location-closed-container dd {
+    margin-left: 0px
+}
+
+#location-closed-container p {
+    margin-top: 0
+}
+
+#location-closed-container .location-selection-hours {
+    text-align: center
+}
+
+#location-closed-container .location-selection-hours h4 {
+    text-align: center;
+    margin: 0 auto
+}
+
+#location-closed-container .location-selection-hours .hours {
+    text-align: center;
+    margin: 0 auto
+}
+
+#location-closed-container .location-selection-details span {
+    display: inline;
+    margin-left: 5px
+}
+
+#location-closed-container .location-selection-details .dropoff-location {
+    margin-top: 15px
+}
+
+#location-closed-container .location-result .loc-number {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 26px
+}
+
+#location-closed-container .location-result .loc-number .loc-index {
+    position: absolute;
+    left: 9px;
+    top: 6px
+}
+
+#location-closed-container .location-result .location-details {
+    display: inline-block;
+    margin-left: 8px;
+    width: 80%
+}
+
+#location-closed-container .location-result .location-details .hours-of-operation {
+    margin-top: 3px
+}
+
+#location-closed-container .date-time .date {
+    display: inline-block;
+    width: 45%;
+    margin-right: 3%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 15px;
+    padding: 5px;
+    float: left;
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 3px
+}
+
+#location-closed-container .date-time .date .value {
+    width: 85%;
+    min-height: 1px;
+    float: left
+}
+
+#location-closed-container .date-time .date .date-cal {
+    width: 15%;
+    float: right
+}
+
+#location-closed-container .date-time .time-box {
+    display: inline-block;
+    width: 45%;
+    height: 25px
+}
+
+#location-closed-container .date-time .time-box select {
+    width: 100%;
+    float: right
+}
+
+#location-closed-container .primary,
+#location-closed-container .secondary,
+#location-closed-container .disabled {
+    float: none;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center
+}
+
+#location-closed-container .button-separator {
+    position: relative;
+    width: 200px;
+    margin: 10px auto 41px auto
+}
+
+#location-closed-container .button-separator hr {
+    border-width: 1px 0 0;
+    border-color: #000
+}
+
+#location-closed-container .button-separator .hr-divider {
+    position: absolute;
+    width: 100%
+}
+
+#location-closed-container .button-separator .hr-left {
+    position: absolute;
+    width: 82px;
+    top: -3px
+}
+
+#location-closed-container .button-separator .hr-right {
+    position: absolute;
+    width: 82px;
+    top: -3px;
+    left: 113px
+}
+
+#location-closed-container .button-separator .or {
+    position: absolute;
+    top: 2px;
+    left: 91px
+}
+
+#location-closed-container .button-container {
+    margin-top: 16px
+}
+
+#location-closed-container #change-time-container .change-requests h4 {
+    margin: 2px 0
+}
+
+#location-closed-container #change-time-container #change-my-time-submit {
+    margin-top: 12px
+}
+
+#location-closed-container #change-time-container #change-my-time-submit.disabled,
+#location-closed-container #change-time-container #change-my-time-submit.disabled:hover {
+    background-color: #f0f0f0;
+    color: #aaa
+}
+
+#location-closed-container #change-time-container #choose-another-location-submit {
+    background-image: none
+}
+
+#location-closed-container #change-time-container .pickup-location .location-selection-details dd {
+    margin-top: 0
+}
+
+#location-closed-container #change-time-container .dropoff-location {
+    margin-top: 15px
+}
+
+#location-closed-container #change-time-container .location-selection-details {
+    text-align: left;
+    margin: 15px 0
+}
+
+#location-closed-container #change-time-container .location-selection-details span.date-and-time {
+    display: block;
+    margin-left: 0
+}
+
+#location-closed-container #change-time-container .location-selection-details dd {
+    display: inline-block
+}
+
+#location-closed-container #change-time-container .location-selection-details .icons-edit_icon {
+    float: right
+}
+
+#location-closed-container #change-location-container .button-separator {
+    margin: 10px auto 20px auto
+}
+
+#location-closed-container #change-location-container .location-selection-details {
+    margin-bottom: 5px
+}
+
+#location-closed-container #change-location-container .separator {
+    position: relative;
+    width: 200px;
+    margin: 20px auto 20px auto
+}
+
+#location-closed-container #change-location-container #load-more {
+    margin-top: 12px
+}
+
+#location-closed-container #change-location-container #change-my-time {
+    background-image: none
+}
+
+#location-closed-container #change-location-container .location-result {
+    padding: 10px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc
+}
+
+#location-closed-container #change-location-container .location-result .location-name {
+    color: #2F95F7
+}
+
+#location-closed-container #change-location-container .location-result .hours-of-operation {
+    display: block
+}
+
+#location-closed-container #change-location-container .button-container {
+    margin-top: 16px
+}
+
+#cdp-decision-overlay .decision {
+    overflow: hidden
+}
+
+#cdp-decision-overlay button {
+    width: 100%
+}
+
+#cdp-decision-overlay #business-wrapper {
+    border-bottom: 2px solid #cdcdcd
+}
+
+#cdp-decision-overlay div.wrapper {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: -40px
+}
+
+#res-flow-edit #res-form figure,
+#res-flow-edit #res-form hr,
+#res-flow-edit #res-form .icons-info_sm,
+#res-flow-edit #res-form .find-location {
+    display: none
+}
+
+#res-flow-edit #res-form #itn-discounts {
+    margin-top: 10px
+}
+
+#res-flow-edit #res-form .row {
+    padding-left: 0
+}
+
+#res-flow-edit #res-form .date-header {
+    padding-top: 0
+}
+
+#res-flow-edit #error-list {
+    margin: 0 0 10px
+}
+
+#res-flow-edit .res-flow-advisory-msg {
+    margin-bottom: 10px
+}
+
+.lb-foreground-cont header.lb-header .multiline {
+    color: #ffd100
+}
+
+.lb-foreground-cont .lb-content-box #homePageloginBox {
+    margin: -10px
+}
+
+.lb-foreground-cont .lb-content-box #homePageloginBox #ememberPhoneHeader {
+    display: block
+}
+
+.lb-foreground-cont .lb-content-box #homePageloginBox #ememberPhoneHeader .ememberPageTitle {
+    color: #555;
+    text-align: left
+}
+
+.lb-foreground-cont .lb-content-box #homePageloginBox #loginBox .loginBoxCotentRow .mobileFormBtns #bookAsGuest {
+    float: none;
+    width: 95%;
+    margin-top: 30px
+}
+
+.popup-container input#cvvNumber {
+    width: 100px
+}
+
+.popup-container .cardLogoContainer {
+    float: right;
+    height: 1px
+}
+
+.popup-container #accept3dsTerms {
+    display: inline
+}
+
+.popup-container .termsLink {
+    color: #355AD8;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.popup-container #cardLogoOuterDiv {
+    width: 210px
+}
+
+.popup-container .popup-btn button {
+    margin-top: 20px;
+    width: auto
+}
+
+.icons-white_lock,
+.icons-lock_icon,
+.icons-lock {
+    position: relative;
+    top: 3px;
+    vertical-align: top
+}
+
+.mobileFormBtns {
+    margin: 0 40px;
+    text-align: center
+}
+
+.containerTableThickBorder,
+.containerTableBorder {
+    border: none
+}
+
+.ememberTitleBar {
+    display: none
+}
+
+.ememberSectionHeader {
+    color: #000;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 0 0 10px;
+    font-family: "Ride", Montserrat, Trebuchet MS, Helvetica, sans-serif;
+    font-weight: bold
+}
+
+.mobileHide {
+    display: none
+}
+
+.mobileBackground {
+    background-color: #fff;
+    padding: 12px 12px 0 10px
+}
+
+.userDefinedContent_todo {
+    display: none
+}
+
+.floatLeft {
+    margin: 0;
+    padding: 0
+}
+
+.resetPasswordContent {
+    color: #555;
+    margin-bottom: 20px
+}
+
+.resetPassword {
+    padding-bottom: 20px
+}
+
+.captchaRefresh {
+    display: none
+}
+
+.errorLabel,
+.errorsBlock {
+    color: red
+}
+
+.gblRemoved {
+    display: none
+}
+
+.btnMargin {
+    margin-right: 10px
+}
+
+.ememberFormContainer {
+    overflow: hidden;
+    padding: 0px
+}
+
+.formSubmitterOverlay {
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    opacity: 0.0;
+    filter: alpha(opacity=0)
+}
+
+.removed {
+    display: none
+}
+
+#memberAuthenticationTable .memberAuthenticationRadioCol_3 .overlayPopup {
+    display: inline-block;
+    color: #000
+}
+
+.overlayPopupLink {
+    cursor: pointer;
+    display: inline-block
+}
+
+.icons-white_lock,
+.icons-checkmark_circle_icon,
+.icons-hertzGoldPlusRewards,
+.icons-lock_icon,
+.icons-lock {
+    display: inline-block
+}
+
+.icons-hertzGoldPlusRewards {
+    border: medium none;
+    margin: 0 8px
+}
+
+.overlayPopupContent {
+    position: absolute;
+    z-index: 10000
+}
+
+.overlayPopupFooter {
+    text-align: right;
+    background-color: #ffd60d;
+    padding-bottom: 5px;
+    padding-right: 5px
+}
+
+.ememberOverlayLearnMoreFooter {
+    width: 325px
+}
+
+.ememberOverlayCloseBox {
+    position: relative;
+    top: 2px
+}
+
+.ememberOverlayLearnMoreContent {
+    padding: 12px;
+    border: 3px solid #ffd60d;
+    background-color: #fefed9;
+    width: 300px;
+    height: 130px;
+    overflow: auto;
+    white-space: normal
+}
+
+.ememberOverlayContent {
+    padding: 12px;
+    border: 3px solid #ffd60d;
+    background-color: #fefed9;
+    width: 300px
+}
+
+#loginSection .sectionWidthSmall,
+#homePageloginBox .sectionWidthSmall {
+    width: 100%
+}
+
+#loginSection .confirmation-div,
+#homePageloginBox .confirmation-div {
+    position: relative;
+    border: 1px solid #0CB98E;
+    border-left-width: 0px;
+    margin-top: 30px
+}
+
+#loginSection .confirmation-div .msg,
+#homePageloginBox .confirmation-div .msg {
+    display: inline-block;
+    margin: 0px 12px;
+    margin-top: 8px;
+    width: 75%;
+    vertical-align: top
+}
+
+#loginSection .confirmation-div .successImg,
+#homePageloginBox .confirmation-div .successImg {
+    width: 5%;
+    display: inline-block;
+    background-color: #0CB98E;
+    text-align: center;
+    padding: 20px 5px;
+    border: 1px solid #0CB98E
+}
+
+#loginSection .confirmation-div .successImg img,
+#homePageloginBox .confirmation-div .successImg img {
+    width: 20px
+}
+
+#loginSection .confirmation-div #close,
+#homePageloginBox .confirmation-div #close {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: right
+}
+
+#loginSection .confirmation-div #close img,
+#homePageloginBox .confirmation-div #close img {
+    top: 14px;
+    position: absolute;
+    right: 10px
+}
+
+#loginSection #ememberPhoneHeader,
+#homePageloginBox #ememberPhoneHeader {
+    display: none;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #fff
+}
+
+#loginSection .loginSectionInnner,
+#homePageloginBox .loginSectionInnner {
+    margin: 0px
+}
+
+#loginSection #loginBox,
+#homePageloginBox #loginBox {
+    margin: 0 auto
+}
+
+#loginSection #loginBox .overlayPopup,
+#homePageloginBox #loginBox .overlayPopup {
+    display: none
+}
+
+#loginSection #loginBox .loginFormLoginSection,
+#loginSection #loginBox .loginFormJoinSection,
+#homePageloginBox #loginBox .loginFormLoginSection,
+#homePageloginBox #loginBox .loginFormJoinSection {
+    color: #000
+}
+
+#loginSection #loginBox .loginFormLoginSection label,
+#homePageloginBox #loginBox .loginFormLoginSection label {
+    font-size: 16px;
+    font-weight: normal
+}
+
+#loginSection #loginBox .loginFormJoinSection,
+#homePageloginBox #loginBox .loginFormJoinSection {
+    font-size: 16px;
+    background-color: #ffd100;
+    min-height: 100%;
+    padding: 30px 30px
+}
+
+#loginSection #loginBox .loginFormJoinSection .login-form-join-header,
+#homePageloginBox #loginBox .loginFormJoinSection .login-form-join-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Ride", Montserrat, Trebuchet MS, Helvetica, sans-serif;
+    font-weight: bold
+}
+
+#loginSection #loginBox .loginFormJoinSection .join-section-list-item,
+#homePageloginBox #loginBox .loginFormJoinSection .join-section-list-item {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: "Ride", Montserrat, Trebuchet MS, Helvetica, sans-serif;
+    font-weight: bold
+}
+
+#loginSection #loginBox .loginFormJoinSection .join-section-list,
+#homePageloginBox #loginBox .loginFormJoinSection .join-section-list {
+    margin-top: 25px;
+    list-style: disc inside;
+    padding: 0
+}
+
+#loginSection #loginBox .loginFormJoinSection #sign-up-for-free-button,
+#homePageloginBox #loginBox .loginFormJoinSection #sign-up-for-free-button {
+    width: 100%
+}
+
+#loginSection #loginBox .loginBoxContent a,
+#homePageloginBox #loginBox .loginBoxContent a {
+    clear: both;
+    display: none;
+    float: left
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow {
+    overflow: hidden
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .clubMember,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .clubMember {
+    margin-top: 5px;
+    margin-bottom: 3px
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .loginBoxColumn1,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .loginBoxColumn1 {
+    float: none;
+    margin: 0 -22px
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .cookiedMemberOverlay,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .cookiedMemberOverlay {
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .cookiedMemberOverlay li,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .cookiedMemberOverlay li {
+    float: left
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow #btn-right,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow #btn-right {
+    padding-right: 20px;
+    float: right
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns {
+    padding: 0;
+    margin: 15px 0
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns #bookAsGuest,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns #bookAsGuest {
+    width: 95%
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns #loginBtn,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns #loginBtn {
+    float: none;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 95%
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns .mobileShow,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns .mobileShow {
+    margin: 20px 0 30px 0;
+    display: block;
+    color: #355ad8;
+    font-family: "Ride", Montserrat, Trebuchet MS, Helvetica, sans-serif;
+    float: none;
+    font-weight: bold
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns #loginCreate,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow .mobileFormBtns #loginCreate {
+    display: none
+}
+
+#loginSection #loginBox .loginBoxContent .loginBoxCotentRow #cookieMemberOnLoginInPage,
+#homePageloginBox #loginBox .loginBoxContent .loginBoxCotentRow #cookieMemberOnLoginInPage {
+    float: left;
+    margin-right: 2px;
+    border-radius: none;
+    border: 1px solid #e2e2e2
+}
+
+#loginSection #loginBox .formRow label,
+#homePageloginBox #loginBox .formRow label {
+    float: none;
+    margin-top: 20px;
+    color: #000
+}
+
+#loginSection #loginBox .formRow label #loginId,
+#loginSection #loginBox .formRow label #password,
+#homePageloginBox #loginBox .formRow label #loginId,
+#homePageloginBox #loginBox .formRow label #password {
+    width: 95%;
+    margin: 10px 0px 20px 0px;
+    border: 1px solid #e2e2e2;
+    box-shadow: none
+}
+
+#loginSection #loginBox .formRow .saveInfo,
+#homePageloginBox #loginBox .formRow .saveInfo {
+    vertical-align: top;
+    font-size: 12px;
+    font-family: "Ride", Montserrat, Trebuchet MS, Helvetica, sans-serif;
+    margin: 20px 0 15px 0;
+    font-weight: bold
+}
+
+#loginSection #loginBox #showCaptcha,
+#homePageloginBox #loginBox #showCaptcha {
+    margin-top: 15px
+}
+
+#loginSection #loginBox .loginBoxCotentRow,
+#homePageloginBox #loginBox .loginBoxCotentRow {
+    overflow: hidden
+}
+
+#loginSection #loginBox .loginBoxCotentRow ul,
+#homePageloginBox #loginBox .loginBoxCotentRow ul {
+    list-style: none
+}
+
+#loginSection #loginBox .loginBoxColumn,
+#homePageloginBox #loginBox .loginBoxColumn {
+    width: 100%;
+    padding: 0px
+}
+
+#loginSection #loginBox .rememberMe .formRow label,
+#homePageloginBox #loginBox .rememberMe .formRow label {
+    color: #000;
+    padding-bottom: 10px
+}
+
+#loginSection #loginBox #userdesc-container .tooltip-container,
+#homePageloginBox #loginBox #userdesc-container .tooltip-container {
+    position: absolute;
+    z-index: 10000;
+    width: 325px
+}
+
+#loginSection #loginBox #userdesc-container .close-pointer,
+#homePageloginBox #loginBox #userdesc-container .close-pointer {
+    float: right;
+    margin-right: 3px
+}
+
+#loginSection #loginBox #userdesc-container .tooltip-footer,
+#homePageloginBox #loginBox #userdesc-container .tooltip-footer {
+    background-color: #ffd60d;
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    text-align: right;
+    width: 325px !important
+}
+
+.lb-foreground-cont .lb-content-box #pinResetSection ul.mobileFormBtns .mobileShow {
+    display: none
+}
+
+.lb-foreground-cont .lb-content-box #pinResetSection ul.mobileFormBtns #bookAsGuest {
+    display: inline;
+    float: none;
+    margin-top: 10px
+}
+
+.lb-foreground-cont .lb-content-box #pinResetSection ul.mobileFormBtns .bookAsGuest {
+    display: none
+}
+
+.lb-foreground-cont .lb-content-box #pinResetSection #membershipDetailsPasswordIndicatorCell #strength {
+    display: inline-block;
+    font-style: italic;
+    position: relative;
+    right: 12px;
+    top: -3px
+}
+
+.lb-foreground-cont .lb-content-box #pinResetSection #membershipDetailsPasswordIndicatorCell .password-indicator {
+    width: auto
+}
+
+.lb-foreground-cont .lb-content-box #pinResetSection #membershipDetailsPasswordIndicatorCell .password-indicator h4 {
+    top: 8px
+}
+
+#pinResetSection .ememberFormContainer .overlayPopup {
+    display: none
+}
+
+#pinResetSection .ememberFormContainer .labelHeading {
+    padding-bottom: 2px
+}
+
+#pinResetSection .ememberFormContainer #password,
+#pinResetSection .ememberFormContainer #passwordVerify {
+    width: 95%
+}
+
+#pinResetSection .loginSectionInnner {
+    margin: 0 10px
+}
+
+#pinResetSection .loginSectionInnner .resetPasswordContent p {
+    display: block
+}
+
+#pinResetSection .mobileBackground {
+    background-color: #fff;
+    padding: 12px 0 0 0
+}
+
+#pinResetSection .mobileBackground #errorPasswordMismatch {
+    display: none
+}
+
+#pinResetSection .butonPosition {
+    float: left
+}
+
+#pinResetSection .clearFloatsOverflow {
+    margin-top: 10px
+}
+
+#pinResetSection ul.mobileFormBtns {
+    padding: 0;
+    margin: 0;
+    text-transform: none
+}
+
+#pinResetSection ul.mobileFormBtns .mobileShow {
+    display: block
+}
+
+#pinResetSection ul.mobileFormBtns li {
+    list-style: none;
+    float: none
+}
+
+#pinResetSection ul.mobileFormBtns li #resetSubmit {
+    float: none
+}
+
+#pinResetSection ul.mobileFormBtns #resetSubmit {
+    float: none
+}
+
+#pinResetSection ul.mobileFormBtns #bookAsGuest {
+    display: none
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .checkmark {
+    list-style-image: url("https://images.hertz.com/rentacar/e_member/misc/checkmark.png")
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .crossmark {
+    list-style-image: url("https://images.hertz.com/icons/Password-invalid-icon.svg")
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-indicator {
+    background: #fff none repeat scroll 0 0
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-indicator .password-strength-information>ul {
+    padding-left: 30px;
+    line-height: 2em
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-indicator h4 {
+    display: inline;
+    left: -10px;
+    margin: 0;
+    position: relative;
+    top: 15px
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .icons-blue-plus-box,
+#pinResetSection #membershipDetailsPasswordIndicatorCell .icons-grey-minus-box {
+    cursor: pointer;
+    display: inline-block;
+    left: -10px;
+    position: relative;
+    top: 0px;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+    float: left
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-info {
+    margin-left: 35px;
+    clear: both
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell #strength {
+    position: relative;
+    display: inline-block;
+    font-style: italic
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .progress {
+    width: 100px;
+    position: relative
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .bar {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    position: relative;
+    margin-left: 1px;
+    top: 0px;
+    border: 1px solid #ccc
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordInvalid {
+    background-color: #FF0004;
+    border: 1px solid #FF0004
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordInvalidBar {
+    border: 1px solid #FF0004;
+    background-color: #FF0004
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordInvalidMeter {
+    color: #FF0004
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordShort {
+    background-color: #FF0004;
+    border: 1px solid #FF0004
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordShortBar {
+    border: 1px solid #FF0004
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordShortMeter {
+    color: #FF0004
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordWeak {
+    background-color: #FF7D01;
+    border: 1px solid #FF7D01
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordWeakBar {
+    border: 1px solid #FF7D01
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordWeakMeter {
+    color: #FF7D01
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordGood {
+    background-color: #8FCD00;
+    border: 1px solid #8FCD00
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordGoodBar {
+    border: 1px solid #8FCD00
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordGoodMeter {
+    color: #8FCD00
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordStrong {
+    background-color: #29A600;
+    border: 1px solid #29A600
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordStrongBar {
+    border: 1px solid #29A600
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .passwordStrongMeter {
+    color: #29A600
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell #verifyPasswordMsg {
+    position: relative;
+    color: red;
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .invalidPasswordMessage {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    max-width: 300px
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell #passwordMeter {
+    display: inline-block
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell #passwordStrengthMeter {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: justify
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-strength-heading h2 {
+    margin: 0px
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-strength-information {
+    overflow: hidden;
+    margin-top: 5px
+}
+
+#pinResetSection #membershipDetailsPasswordIndicatorCell .password-strength-information p {
+    margin: 0px
+}
+
+.lb-foreground-cont .lb-content-box #forgotPasswordContainer ul.mobileFormBtns .bookAsGuest {
+    display: none
+}
+
+.lb-foreground-cont .lb-content-box #forgotPasswordContainer ul.mobileFormBtns #bookAsGuest {
+    display: inline;
+    margin-top: 10px
+}
+
+.lb-foreground-cont .lb-content-box #forgotPasswordContainer ul.mobileFormBtns .mobileShow {
+    display: none
+}
+
+#forgotPasswordContainer .sectionWidthSmall {
+    margin: 0;
+    width: auto
+}
+
+#forgotPasswordContainer .mobileHide {
+    display: none
+}
+
+#forgotPasswordContainer #forgotPasswordViewContainer #resetMemberNumber {
+    width: 95%
+}
+
+#forgotPasswordContainer #cardType,
+#forgotPasswordContainer #driversLicenseCountryState {
+    width: 97%
+}
+
+#forgotPasswordContainer #driversLicense,
+#forgotPasswordContainer #cardNumber,
+#forgotPasswordContainer #captchaCode {
+    width: 95%
+}
+
+#forgotPasswordContainer .containerTableBorder .ememberFormContainer {
+    padding: 0;
+    float: none
+}
+
+#forgotPasswordContainer #forgotPasswordViewContainer .mobiWhiteBgBlock {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px
+}
+
+#forgotPasswordContainer #forgotPasswordViewContainer .refreshLink {
+    position: relative;
+    top: 30px;
+    float: right;
+    width: 100px
+}
+
+#forgotPasswordContainer .memberAuthenticationRadioRow {
+    margin-right: 0;
+    overflow: hidden
+}
+
+#forgotPasswordContainer .memberAuthenticationRadioRow #captchaContainer .pointer {
+    display: block;
+    cursor: pointer;
+    text-decoration: underline
+}
+
+#forgotPasswordContainer .memberAuthenticationRadioRow #captchaContainer #memberAuthenticationCaptchaImage {
+    width: 150px
+}
+
+#forgotPasswordContainer .memberAuthenticationRadioRow #captchaDiv {
+    display: none
+}
+
+#forgotPasswordContainer #captchaImage-desc .tooltip-container {
+    position: absolute;
+    z-index: 10000;
+    width: 325px
+}
+
+#forgotPasswordContainer #captchaImage-desc .close-pointer {
+    float: right;
+    margin-right: 3px
+}
+
+#forgotPasswordContainer #captchaImage-desc .tooltip-footer {
+    background-color: #ffd60d;
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    text-align: right;
+    width: 325px !important
+}
+
+#forgotPasswordContainer #memberAuthenticationTable .memberAuthenticationRadioCol_1 .memberAuthenticationRadioInput {
+    display: inline-block
+}
+
+#forgotPasswordContainer #memberAuthenticationTable .memberAuthenticationRadioCol_3 .overlayPopup {
+    display: none
+}
+
+#forgotPasswordContainer ul.mobileFormBtns {
+    text-transform: none;
+    margin: 0;
+    padding: 0
+}
+
+#forgotPasswordContainer ul.mobileFormBtns li {
+    list-style: none;
+    float: none
+}
+
+#forgotPasswordContainer ul.mobileFormBtns li button {
+    float: none
+}
+
+#forgotPasswordContainer ul.mobileFormBtns .mobileShow {
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+    float: none
+}
+
+#forgotPasswordContainer ul.mobileFormBtns .bookAsGuest {
+    display: none
+}
+
+#forgotPasswordContainer ul.mobileFormBtns #bookAsGuest {
+    display: none
+}
+
+ul#memberAuthenticationTable {
+    padding: 0
+}
+
+.lb-foreground-cont .lb-content-box #lockedSection ul.mobileFormBtns #bookAsGuest {
+    display: inline;
+    margin-top: 10px
+}
+
+.lb-foreground-cont .lb-content-box #lockedSection ul.mobileFormBtns .bookAsGuest {
+    display: none
+}
+
+#lockedSection .ememberFormContainer {
+    overflow: hidden;
+    margin: 0 10px
+}
+
+#lockedSection .contactUsText {
+    margin-top: 10px;
+    padding: 0;
+    color: #fff;
+    text-transform: none;
+    list-style: none;
+    text-align: center
+}
+
+#lockedSection .contactUsText #contactUsByPhone {
+    color: #fff;
+    text-decoration: underline
+}
+
+#lockedSection .errorMessage {
+    padding: 10px
+}
+
+#lockedSection .errorMessage .blockedMessage {
+    color: #ff0000
+}
+
+#lockedSection .deskTopReset {
+    overflow: hidden;
+    padding: 15px 0
+}
+
+#lockedSection .ememberFormContainer {
+    overflow: hidden;
+    margin: 0;
+    padding: 0px
+}
+
+#lockedSection ul.mobileFormBtns {
+    margin: 0;
+    padding: 0
+}
+
+#lockedSection ul.mobileFormBtns li {
+    list-style: none;
+    float: none
+}
+
+#lockedSection ul.mobileFormBtns li button {
+    float: none
+}
+
+#lockedSection ul.mobileFormBtns #bookAsGuest {
+    display: none
+}
+
+#lockedSection ul.mobileFormBtns .mobileShow {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    float: none
+}
+
+#lockedSection ul.mobileFormBtns .bookAsGuest {
+    display: none
+}
+
+.lb-foreground-cont .lb-content-box .clearFloatsOverflow {
+    clear: both;
+    margin-top: 10px
+}
+
+#pinResetConfirmationSection .mobileHide {
+    display: none
+}
+
+#pinResetConfirmationSection .loginSectionInnner {
+    margin: 0 10px
+}
+
+#pinResetConfirmationSection .loginSectionInnner .icons-check_blue {
+    display: none
+}
+
+#pinResetConfirmationSection .loginSectionInnner #profile-btn {
+    display: none
+}
+
+#pinResetConfirmationSection .loginSectionInnner #home-btn {
+    margin: 10px 0
+}
+
+#pinResetConfirmationSection ul.mobileFormBtns {
+    list-style: none;
+    text-transform: none;
+    padding: 0
+}
+
+#pinResetConfirmationSection ul.mobileFormBtns li {
+    float: none
+}
+
+#pinResetConfirmationSection ul.mobileFormBtns #home-btn {
+    margin: 10px 0
+}
+
+#innerWarningContainer .noticeArea {
+    background-color: #FFCEB8;
+    margin: 10px;
+    padding: 10px
+}
+
+#innerWarningContainer .noticeArea #center {
+    text-align: center
+}
+
+#innerWarningContainer .noticeArea #centerDiv {
+    margin: 0 auto
+}
+
+#innerWarningContainer .bold {
+    font-weight: bold
+}
+
+.info-overlay ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+}
+
+.info-overlay ul.links {
+    border-right: 2px solid #eee
+}
+
+.info-overlay ul.links li {
+    margin-bottom: 15px
+}
+
+.info-overlay ul.description li {
+    display: none
+}
+
+.info-overlay ul.description li.selected {
+    display: block
+}
+
+.info-overlay ul.description div.image {
+    text-align: center;
+    height: 88px
+}
+
+.info-overlay h2 {
+    margin: 0px;
+    font-size: 1.2em
+}
+
+#rqrOverlayContent {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: auto
+}
+
+#rqrOverlayContent .selectBox {
+    background-color: #f7f7f7;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em
+}
+
+#rqrOverlayContent .selectBox h2 {
+    margin: 0px;
+    padding: 0 0 10px 0;
+    font-size: 1.2em
+}
+
+#rqrOverlayContent .selectBox .formFieldHeader {
+    font-family: arial
+}
+
+.rateDetailsOverlay {
+    height: auto
+}
+
+.hod-portal {
+    margin: 10px 0 0 15px
+}
+
+.hod-portal.vehicle-page {
+    margin-left: 0
+}
+
+.hod-portal .hod-divider {
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.hod-portal p {
+    color: #000;
+    margin: 0 0 10px 0
+}
+
+.hod-portal #hod-redirect {
+    padding: 0;
+    margin-bottom: 10px;
+    list-style-type: none
+}
+
+.hod-portal #hod-redirect li {
+    padding-bottom: 5px
+}
+
+.hod-logo {
+    display: block
+}
+
+.hod-inner-content {
+    margin-top: 10px
+}
+
+#dtg-cont {
+    padding: 0 15px
+}
+
+#dtg-cont .dtg-options {
+    margin: 30px 0
+}
+
+#dtg-cont .dtg-options .dtg-link {
+    text-align: center
+}
+
+#dtg-cont .dtg-options .dtg-first-option {
+    text-align: center
+}
+
+#dtg-cont .dtg-options .dtg-second-option {
+    text-align: center
+}
+
+#dtg-cont .dtg-options .dtg-mob-options-divider {
+    margin-top: 20px;
+    border-top: 1px solid #B1B1B1;
+    position: relative
+}
+
+#dtg-cont .dtg-options .dtg-mob-options-divider .dtg-mob-divider-text {
+    padding: 0 2.5%;
+    position: absolute;
+    top: -7px;
+    left: 45%;
+    background-color: #fff
+}
+
+#dtg-cont p {
+    font-size: 14px;
+    color: #696969
+}
+
+#dandc-overlay {
+    padding: 20px
+}
+
+#dandc-overlay #dandc-locations {
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px
+}
+
+#dandc-overlay #dandc-locations li,
+#dandc-overlay #dandc-profile-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #355ad8;
+    font-size: 1.2em;
+    padding-bottom: 10px
+}
+
+#dandc-overlay #dandc-locations li:hover,
+#dandc-overlay #dandc-profile-link:hover {
+    color: #1f3da1;
+    font-weight: bold
+}
+
+#dandc-overlay #dandc-locations li:visited,
+#dandc-overlay #dandc-profile-link:visited {
+    color: #36a
+}
+
+#dandc-overlay label {
+    padding-bottom: 5px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 1.1em
+}
+
+#dandc-overlay input[type="text"] {
+    width: 100%
+}
+
+#dandc-overlay #dnc-error-list {
+    color: red;
+    background-color: white;
+    border: 3px solid #FF7032;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none
+}
+
+#dandc-overlay #dnc-error-list ul {
+    margin: 0px;
+    padding-left: 15px
+}
+
+#dandc-overlay #return-to-site {
+    padding-top: 10px
+}
+
+#dandc-overlay #return-to-site label input[type="checkbox"] {
+    width: 25px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline
+}
+
+.details-container article {
+    margin-bottom: 12px
+}
+
+.details-container dd {
+    padding: 0px;
+    margin: 0px;
+    line-height: 18px
+}
+
+.details-container dd strong {
+    margin-right: 3px
+}
+
+.details-container .details-content {
+    margin-left: 15px
+}
+
+.details-container #address-content figure {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    margin-left: -15px
+}
+
+.details-container #service-content ul {
+    padding-left: 14px
+}
+
+.details-container #service-content li {
+    line-height: 18px
+}
+
+.details-container #service-content li.service-head {
+    list-style: none;
+    margin-left: -15px
+}
+
+.details-container #notes-content p {
+    margin: 0px;
+    padding: 0px
+}
+
+.offsell-overlay h1 {
+    font-size: 1.2em
+}
+
+.offsell-overlay h2 {
+    font-size: 1em
+}
+
+.offsell-overlay li {
+    margin: 7px 0px;
+    border-bottom: 1px solid #444
+}
+
+.offsell-overlay li.title {
+    border-bottom: 0px;
+    list-style: none
+}
+
+.offsell-overlay span {
+    position: relative;
+    bottom: -2px;
+    background-color: #fff
+}
+
+.offsell-overlay span.number {
+    padding-left: 2px;
+    float: right
+}
+
+.lt-ie8 .offsell-overlay span.number {
+    top: -14px
+}
+
+.decision-overlay .decision {
+    overflow: hidden
+}
+
+.decision-overlay strong {
+    font-size: 1.8em
+}
+
+.decision-overlay button {
+    width: 100%
+}
+
+.decision-overlay div.wrapper {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: -40px
+}
+
+.decision-overlay div.wrapper .city-special-vehicle .city-special-heading {
+    background-color: #F8F018;
+    padding: 10px;
+    color: #005878;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.decision-overlay div.wrapper .city-special-vehicle .city-special-heading .more-info {
+    display: none
+}
+
+.decision-overlay div.wrapper .city-special-vehicle .city-special-rate {
+    background-color: #2888F8;
+    padding: 10px;
+    margin-top: 1px;
+    color: #fff
+}
+
+.decision-overlay div.wrapper .city-special-vehicle .non-discount-price {
+    text-decoration: line-through
+}
+
+.decision-overlay div.wrapper .city-special-vehicle .non-discount-price strong {
+    font-size: 13px
+}
+
+.decision-overlay div.wrapper .city-special-vehicle button {
+    background-color: #fff;
+    color: #1A5BAB;
+    margin-top: 15px
+}
+
+.decision-overlay div.wrapper .city-special-vehicle button:hover,
+.decision-overlay div.wrapper .city-special-vehicle button:focus {
+    background-color: #FCF235
+}
+
+.decision-overlay div.wrapper span.select-another p {
+    margin: 0;
+    padding: 0
+}
+
+#rental-agreement {
+    padding: 15px
+}
+
+#rental-agreement div.wrapper {
+    color: #666666
+}
+
+#evrental-agreement {
+    padding: 15px
+}
+
+#evrental-agreement div.wrapper {
+    color: #666666
+}
+
+.gold-anytime-detailed-info h2 {
+    margin: 0 0 5px;
+    font-weight: normal
+}
+
+.gold-anytime-detailed-info p {
+    margin: 0
+}
+
+.gold-anytime-detailed-info .ga-step-cont {
+    margin: 10px 0
+}
+
+.gold-anytime-detailed-info .ga-step-heading {
+    font-weight: bold;
+    text-align: center;
+    width: 25%
+}
+
+.gold-anytime-detailed-info .ga-step {
+    display: table-row
+}
+
+.gold-anytime-detailed-info .ga-step-img {
+    display: table-cell;
+    width: 25%
+}
+
+.gold-anytime-detailed-info .ga-step-img img {
+    width: 100%
+}
+
+.gold-anytime-detailed-info .ga-step-desc {
+    width: 75%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px
+}
+
+#ga-banner-in-overlay .gold-anytime-banner {
+    background-color: #555555;
+    padding: 10px;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center
+}
+
+#ga-banner-in-overlay .gold-anytime-banner .gold-anytime-steps {
+    width: 80%;
+    margin: 0 auto
+}
+
+#ga-banner-in-overlay .gold-anytime-banner .ga-info {
+    display: none
+}
+
+#ga-banner-in-overlay .gold-anytime-banner .gold-anytime-step-desc {
+    display: none
+}
+
+#ga-banner-in-overlay .gold-anytime-banner .step {
+    float: left;
+    text-align: center;
+    width: 33.3%
+}
+
+#ga-banner-in-overlay .gold-anytime-banner .step img {
+    width: 85%
+}
+
+#ga-banner-in-overlay .gold-anytime-banner .step .gold-anytime-step-heading {
+    font-weight: bold;
+    margin-bottom: 2px
+}
+
+#cancel-fee-overlay .disclaimer {
+    font-size: 0.9em
+}
+
+#cancel-fee-overlay table {
+    width: 100%
+}
+
+#cancel-fee-overlay table th {
+    text-align: left;
+    background-color: #e9ecf2
+}
+
+#cancel-fee-overlay table td,
+#cancel-fee-overlay table th {
+    padding: 15px;
+    border: 1px solid #ededed
+}
+
+#cancel-fee-overlay table .cancel-period {
+    width: 65%
+}
+
+#cancel-fee-overlay table .cancel-fee {
+    width: 35%
+}
+
+#cancel-fee-overlay button.tertiary {
+    margin-top: 15px
+}
+
+@media only screen and (min-width: 480px) {
+    .ww-results,
+    .ww-results.touch {
+        width: 400px
+    }
+    .ww-results .wL,
+    .ww-results.touch .wL {
+        width: 395px
+    }
+    .ww-results .wL .ww-item .ww-name,
+    .ww-results.touch .wL .ww-item .ww-name {
+        width: 373px
+    }
+    .ww-results .ww-moreinfo-container,
+    .ww-results.touch .ww-moreinfo-container {
+        width: 400px;
+        left: 400px
+    }
+    .ww-results .ww-moreinfo-container #disabled-map,
+    .ww-results .ww-moreinfo-container #map,
+    .ww-results .ww-moreinfo-container .hod-content,
+    .ww-results.touch .ww-moreinfo-container #disabled-map,
+    .ww-results.touch .ww-moreinfo-container #map,
+    .ww-results.touch .ww-moreinfo-container .hod-content {
+        display: none
+    }
+    #res-form #itn-age-info {
+        width: 100%;
+        padding-left: 0px
+    }
+    #loginSection {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%
+    }
+    #pinResetSection {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%
+    }
+    #forgotPasswordContainer {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%
+    }
+    #forgotPasswordContainer .sectionWidthSmall {
+        margin: 0 10px;
+        width: auto
+    }
+    #forgotPasswordContainer #memberAuthenticationTable .memberAuthenticationRadioCell {
+        float: none
+    }
+    #forgotPasswordContainer #forgotPasswordViewContainer .refreshLink {
+        width: auto;
+        right: 30px
+    }
+    #lockedSection {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%
+    }
+    #pinResetConfirmationSection {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%
+    }
+    .lb-foreground-cont .lb-content-box #pinResetSection #membershipDetailsPasswordIndicatorCell .password-indicator h4 {
+        top: 15px
+    }
+    #res-form figure {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        float: left
+    }
+    #res-form article {
+        padding-left: 10px;
+        width: 80%
+    }
+    #res-form .row {
+        padding: 0px 0px 5px 45px
+    }
+    #res-form .btn-group {
+        padding: 0px
+    }
+    .previous-searches-list .content-half {
+        float: left;
+        width: 50%
+    }
+    .previous-searches-list button {
+        float: left;
+        clear: left
+    }
+}
+
+/* EOF */
